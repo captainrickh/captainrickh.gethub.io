@@ -20,23 +20,25 @@ h1 {
 h2 {
     font-size: 1rem;
     text-align: center;
-    border-bottom: 1.5px solid #bbb;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #bbb;
 }
 
 header, main, footer {
     margin: 0rem auto;
     padding: .6rem;
     max-width: 450px;
+    background-color:rgb(0, 0, 0);
 }
 
 header, footer, footer a {
     text-align: center;
-    background-color: rgb(41, 0, 54);
+    background-color: rgb(7, 53, 56);
     color:whitesmoke;
 }
 
 header img {
-    width: 98px;
+    width: 114px;
     height: auto;
     float: right;
 }
