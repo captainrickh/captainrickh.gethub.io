@@ -1,0 +1,84 @@
+/* CIT 230 - Prestion Home page*/
+@import url('https://fonts.googleapis.com/css?family=Amarante|Inconsolata');
+
+* { text-align: center; }
+
+h2, h3, footer ul {
+    font-family: 'Amarante', cursive;
+}
+
+p, footer li {
+    font-family: 'Inconsolata', Gadget, sans-serif; 
+}
+
+
+header {
+	margin: 10px auto;
+	background-color: #4b8c2c;
+	border: 1px solid #edbc5a;
+	box-shadow: 0 0 30px #777;
+    height: auto;
+    min-height: 125px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #000000;
+    font-family: 'Amarante', cursive;
+}
+
+header div {
+    font-size: 1.3rem;
+    padding-bottom: 5px;
+    font-style: italic;
+}
+
+header img {
+    width: 175px;
+    height: auto;
+    float: left;
+    margin: 10px;
+    border: 1px solid #edbc5a;
+}
+
+nav {
+    background: #28ba35;
+    margin-top: -15px;
+}
+
+
+
+nav li{
+    list-style-type: none;
+    font-family:  'Amarante' Arial, Helvetica;
+    font-size: 1em;
+}
+
+body {
+	background-color: #fff;
+}
+
+footer {
+    Background: #edbc5a;
+}
+
+footer img {
+    height: 200px;
+    border: 1px solid black;
+    float: center;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+
+
