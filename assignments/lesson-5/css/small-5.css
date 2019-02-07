@@ -1,0 +1,299 @@
+/* CIT 230 - Prestion Home page small-5*/
+@import url('https://fonts.googleapis.com/css?family=Amarante|Inconsolata');
+
+
+
+* { text-align: center; }
+
+h2, h3, footer ul {
+    font-family: 'Amarante', cursive;
+}
+
+p, footer li {
+    font-family: 'Inconsolata', Gadget, sans-serif; 
+}
+
+
+header {
+	margin: 10px auto;
+	background-color: #4b8c2c;
+	border: 1px solid #edbc5a;
+	box-shadow: 0 0 30px #777;
+    height: auto;
+    min-height: 125px;
+    
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #000000;
+    font-family: 'Amarante', cursive;
+}
+
+header div {
+    font-size: 1.3rem;
+    padding-bottom: 5px;
+    font-style: italic;
+}
+
+header img {
+    width: 175px;
+    height: auto;
+    float: left;
+    margin: 10px;
+    border: 1px solid #edbc5a;
+}
+
+nav {
+    background: #28ba35;
+    margin-top: -15px;
+}
+
+
+
+nav li{
+    list-style-type: none;
+    font-family:  'Amarante' Arial, Helvetica;
+    font-size: 1em;
+}
+
+body {
+    background-color: #04b8e0;
+}
+
+
+
+footer {
+    Background: #edbc5a;
+}
+
+footer img {
+    height: 200px;
+    border: 1px solid black;
+    float: center;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+#page-nav {
+    background: #28ba35;
+  }
+  #page-nav label, #page-nav ul, #page-nav li {
+    display: inline-block;
+  }
+  
+  /* [HAMBURGER - HIDDEN ON BIG SCREENS] */
+  #page-nav label, #hamburger {
+    display: none;
+  }
+  #page-nav label {
+    color: #000000;
+    background: ;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 5px;
+  }
+  
+  /* [MENU ITEMS] */
+  #page-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+  }
+  #page-nav ul li {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  #page-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* [ON SMALL SCREENS] */
+  @media screen and (max-width: 768px){
+    /* [SHOW HAMBURGER] */
+    #page-nav label {
+      display: inline-block;
+    }
+  
+    /* [BREAK DOWN MENU INTO VERTICAL] */
+    #page-nav ul li {
+      display: block;
+    }
+    #page-nav ul li {
+      border-top: 1px solid #333;
+    }
+  
+    /* [SHOW/HIDE MENU ON CHECKBOX CLICK] */
+    #page-nav ul {
+      display: none;
+    }
+    #page-nav input:checked ~ ul {
+      display: block;
+    }
+
+
+
+
+
+
+/*hamberger menu start*
+a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.4s ease;
+}
+
+a:hover
+{
+  color: #edbc5a;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 0px;
+  left: center;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #000000;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+  padding-top: 5px;
+  
+  background: #28ba35;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+/*hamberger menu end*/
+
+
+
+
+
+
+
+
