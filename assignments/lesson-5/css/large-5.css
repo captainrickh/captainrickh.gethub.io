@@ -3,18 +3,18 @@
 
 
 @media screen and (min-width: 600px) {
-
+  
     
     nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background-color: #28ba35;
   }
   
   nav li {
     display:inline;
-    border-right: 1px solid #bbb;    
+    border-right: 1px solid #edbc5a;    
   }
   
   nav li a {
@@ -24,13 +24,9 @@
   }
   
   /* Change the link color to #111 (black) on hover */
-  nav li a:hover {
-    background-color: #111;
-  }
 
-  .active {
-    background-color: rgb(16, 119, 122);
-  }
+
+
   
 }
 
