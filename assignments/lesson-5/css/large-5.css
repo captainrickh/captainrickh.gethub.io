@@ -4,31 +4,32 @@
 
 @media screen and (min-width: 600px) {
   
-    
-    nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #28ba35;
-  }
-  
-  nav li {
-    display:inline;
-    border-right: 1px solid #edbc5a;    
-  }
-  
-  nav li a {
-    color: white;
-    padding: 0px 15px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-
-
-
-  
+/*Menu Bar Full*/  
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #28ba35;
 }
+  
+nav li {
+  display:inline;
+  border-right: 1px solid #edbc5a;    
+}
+  
+nav li a {
+  color: white;
+  padding: 0px 15px;
+  text-decoration: none;
+}
+
+/*5Day Forcast*/
+section.forecast table {
+  display: inline;
+}
+
+
+
 
 
 
