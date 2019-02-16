@@ -1,0 +1,218 @@
+/* CIT 230 - Prestion Home page small-5*/
+@import url('https://fonts.googleapis.com/css?family=Amarante|Spectral+SC');
+
+
+/*general*/
+* { text-align: center; }
+
+h2, h3, footer ul {
+    font-family: 'Amarante', cursive;
+}
+
+p {
+    font-family: 'Spectral SC', Gadget, sans-serif; 
+}
+
+
+
+/*Header*/
+header {
+	margin: 10px auto;
+	background-color: #4b8c2c;
+	height: auto;
+  min-height: 130px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #000000;
+  font-family: 'Amarante', cursive;
+}
+
+header div {
+    font-size: 1.3rem;
+    padding-bottom: 5px;
+    font-style: italic;
+}
+
+header img {
+    width: 175px;
+    height: auto;
+    float: left;
+    margin: 10px;
+    border: 1px solid #edbc5a;
+}
+
+
+
+/*Menu Bar*/
+nav {
+    background: #28ba35;
+    margin-top: -10px;
+}
+
+nav li{
+    list-style-type: none;
+    font-family:  'Spectral SC', Arial, Helvetica;
+    font-size: 1em;
+}
+
+nav li a:hover {
+  background-color: #edbc5a;
+}
+
+
+
+/*Main Weather Summy*/
+main {max-width: 820px; margin:0 auto;}
+h2 {
+  text-align: center; 
+  font-size:2.4rem;
+  text-shadow:3px 3px 5px #777;
+}
+
+.herodiv {margin: 10px auto; position: relative;}
+
+.stats {
+	position: absolute;
+	top: 40px;
+	left: 90px;
+	background: #04b8e0c9;
+	border: 2px solid #000;
+	padding: 1rem;
+	box-shadow: 0 0 30px #fff;
+}
+
+.stats p {
+  font-weight: bolder;
+}
+
+.stats h3 {
+  font-size: 18px;
+  border-bottom: 2px solid currentColor;
+}
+
+#value1 {
+  color: #cc5c00;
+  font-weight: bolder;
+}
+
+
+
+/*5Day Forcast*/
+section.forecast table {
+  display: none;
+}
+
+
+
+/*Local Artical*/
+article p {
+  font-family: Geneva, Verdana, sans-serif;
+}
+
+.sec1{
+  background-color: #edbc5a9f;
+}
+
+.sec1 h5 { margin-top: -30px; }
+
+.img1 {
+  float: right;
+  width: 200px;
+  height: auto;
+  box-shadow: 2px 2px 2px black;
+  margin-right: 15px;
+}
+
+
+
+/*Footer*/
+footer {
+    Background: #4b8c2c;
+}
+
+footer img {
+    height: 200px;
+    border: 1px solid black;
+    float: center;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+
+
+
+
+
+/*Hamberger Menu*/
+#page-nav {
+    background: #28ba35;
+  }
+  #page-nav label, #page-nav ul, #page-nav li {
+    display: inline-block;
+  }
+  
+  /* [HAMBURGER - HIDDEN ON BIG SCREENS] */
+  #page-nav label, #hamburger {
+    display: none;
+  }
+  #page-nav label {
+    color: #000000;
+    background:  ;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 5px;
+  }
+  
+  /* [MENU ITEMS] */
+  #page-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+  }
+  #page-nav ul li {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  #page-nav ul li a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  /* [ON SMALL SCREENS] */
+  @media screen and (max-width: 768px){
+    /* [SHOW HAMBURGER] */
+    #page-nav label {
+      display: inline-block;
+    }
+  
+    /* [BREAK DOWN MENU INTO VERTICAL] */
+    #page-nav ul li {
+      display: block;
+    }
+    #page-nav ul li {
+      border-top: 1px solid #333;
+    }
+  
+    /* [SHOW/HIDE MENU ON CHECKBOX CLICK] */
+    #page-nav ul {
+      display: none;
+    }
+    #page-nav input:checked ~ ul {
+      display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
