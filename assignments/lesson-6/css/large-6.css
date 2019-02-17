@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Amarante|Inconsolata');
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
   
 /*Menu Bar Full*/  
 nav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 10px;
   background-color: #28ba35;
 }
   
@@ -19,15 +19,15 @@ nav li {
   
 nav li a {
   color: white;
-  padding: 0px 15px;
+  padding: 7px 10px;
   text-decoration: none;
 }
 
 /*5Day Forcast*/
-section.forecast table {
+.forecast {
   display: inline;
 }
-
+}
 
 
 

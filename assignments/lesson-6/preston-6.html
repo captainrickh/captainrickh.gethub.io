@@ -23,14 +23,12 @@
                 </section>
         </header>
         
-        <nav id="page-nav">
-
-            <label for="hamburger">&#9776;</label>
-            <input type="checkbox" id="hamburger"/>
+        <nav class="navigation">            
 
                 <ul>
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;</a></li>
                     <li><a href="#index.html">Home</a></li>
-                    <li><a href="preston-6.html">Preston</a></li>
+                    <li><a href="preston-6.html" class="active">Preston</a></li>
                     <li><a href="#soda-springs.html">Soda Springs</a></li>
                     <li><a href="#fish-haven.html">Fish Haven</a></li>
                     <li><a href="#storm-center.html">Storm Center</a></li>
@@ -41,14 +39,18 @@
         <main>
             <h2>Preston Idaho</h2>
 	            <div class="herodiv">
-		            <img src="images/preston.jpg">
+                        <picture>
+                                <source media="(max-width: 350px)" srcset="images/cit230_image_franklinOriginal350.jpg">
+                                <source media="(min-width: 351px)" srcset="images/cit230_image_franklinOriginal800.jpg">
+                                <img class="heroimg" src="images/cit230_image_franklinOriginal800" alt="hero image">
+                        </picture>
 		            <section class="stats">
 			            <h3>Weather Summary</h3>
-			                <p>Currently: <span id="value1">Sunny</span></p>
-			                <p>High: <span id="value1">76&deg;F</span></p>
-                            <p>Wind Chill: <span id="value1">78&deg;F</span></p>
-                            <p>Humidity: <span id="value1">69%</span></p>
-                            <p>Wind Speed: <span id="value1">5 mph</span></p>
+			                <p>Currently: <span class="value1">Sunny</span></p>
+			                <p>High: <span class="value1">76&deg;F</span></p>
+                            <p>Wind Chill: <span class="value1">78&deg;F</span></p>
+                            <p>Humidity: <span class="value1">69%</span></p>
+                            <p>Wind Speed: <span class="value1">5 mph</span></p>
 		            </section>
 	            </div>
 
@@ -106,11 +108,9 @@
 
                     <img id="map" src="images/area-map.jpg" alt="Area Map">
 
-                <p>&copy; 2019 | Rick Holmstead | <a href="#">Terms of Use</a> | Date: <span id="datetime"></span></p>
-                <script>
-                        var dt = new Date();
-                        document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
-                </script> 
+                <p>&copy; 2019 | Rick Holmstead | <a href="#">Terms of Use</a> | <span id="currentdate"></span></p>
         </footer>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
     </body>
 </html>
