@@ -1,4 +1,4 @@
-/* CIT 230 - Prestion Home page large-5*/
+/* CIT 230 - Prestion Home page large*/
 @import url('https://fonts.googleapis.com/css?family=Amarante|Inconsolata');
 
 
@@ -23,13 +23,34 @@ nav li a {
   text-decoration: none;
 }
 
+
+
+
 /*5Day Forcast*/
 .forecast {
   display: inline;
 }
+
+
+
+
+
+/*Gallary Page*/
+
+.container {margin: 0rem auto; display:grid; grid-template-columns: 1fr 1fr 1fr;}
+img { width: ; height: auto; margin: 0rem;}
+figcaption {font-size: smaller;}
+
+.shadow:hover {box-shadow: 0 0 50px #333;}
+
+
+
+
+
+
+
+
+
+
 }
-
-
-
-
 

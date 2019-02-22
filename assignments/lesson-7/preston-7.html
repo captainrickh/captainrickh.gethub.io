@@ -7,11 +7,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="description" content="Preston weather site. Rick, a student in CIT 230: Web Front-End Development at Brigham Young University-Idaho">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-        <link rel="stylesheet" href="css/small-6.css">
-        <link rel="stylesheet" href="css/large-6.css">
-
-
+        <link rel="stylesheet" href="css/small-7.css">
+        <link rel="stylesheet" href="css/medium-7.css">
+        <link rel="stylesheet" href="css/large-7.css">
     </head>
+
 
     <body>
         <header>
@@ -22,64 +22,66 @@
                     <div class="motto">"We're here for you weather or not."</div>
                 </section>
         </header>
-        
-        <nav class="navigation">            
 
-                <ul>
-                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;</a></li>
-                    <li><a href="#index.html">Home</a></li>
-                    <li><a href="preston-6.html" class="active">Preston</a></li>
-                    <li><a href="#soda-springs.html">Soda Springs</a></li>
-                    <li><a href="#fish-haven.html">Fish Haven</a></li>
-                    <li><a href="#storm-center.html">Storm Center</a></li>
-                    <li><a href="#gallery.html">Gallery</a></li>
-                </ul>
+
+        <nav>            
+            <ul class="navigation">
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="#index.html">Home</a></li>
+                <li><a href="preston-7.html" class="active">Preston</a></li>
+                <li><a href="#soda-springs.html">Soda Springs</a></li>
+                <li><a href="#fish-haven.html">Fish Haven</a></li>
+                <li><a href="#storm-center.html">Storm Center</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>
         </nav>
 
+
         <main>
+
             <h2>Preston Idaho</h2>
 	            <div class="herodiv">
-                        <picture>
-                                <source media="(max-width: 350px)" srcset="images/cit230_image_franklinOriginal350.jpg">
-                                <source media="(min-width: 351px)" srcset="images/cit230_image_franklinOriginal800.jpg">
-                                <img class="heroimg" src="images/cit230_image_franklinOriginal800" alt="hero image">
-                        </picture>
-		            <section class="stats">
+                    <picture>
+                            <source media="(max-width: 350px)" srcset="images/cit230_image_franklinOriginal350.jpg">
+                            <source media="(min-width: 351px)" srcset="images/cit230_image_franklinOriginal800.jpg">
+                            <img class="heroimg" src="images/cit230_image_franklinOriginal800" alt="hero image">
+                    </picture>
+                    
+                    <section class="stats">
 			            <h3>Weather Summary</h3>
 			                <p>Currently: <span class="value1">Sunny</span></p>
-			                <p>High: <span class="value1">76&deg;F</span></p>
-                            <p>Wind Chill: <span class="value1">78&deg;F</span></p>
+			                <p>High: <span class="value1" id="temp">76&deg;F</span></p>
+                            <p>Wind Chill: <span class="value1" id="output"></span></p>
                             <p>Humidity: <span class="value1">69%</span></p>
-                            <p>Wind Speed: <span class="value1">5 mph</span></p>
+                            <p>Wind Speed: <span class="value1" id="speed">5 mph</span></p>
 		            </section>
 	            </div>
 
-                    <section class="forecast">
-                            <h3>5 Day Forecast</h3>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Friday</th>
-                                        <th>Saturday</th>
-                                        <th>Sunday</th>
-                                        <th>Monday</th>
-                                        <th>Tueday</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>89&deg;F</td>
-                                        <td>87&deg;F</td>
-                                        <td>84&deg;F</td>
-                                        <td>75&deg;F</td>
-                                        <td>72&deg;F</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </section>
-
-            <br>
-            <br>
+                <section class="forecast">
+                    <h3>5 Day Forecast</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                                <th>Sunday</th>
+                                <th>Monday</th>
+                                <th>Tueday</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>89&deg;F</td>
+                                <td>87&deg;F</td>
+                                <td>84&deg;F</td>
+                                <td>75&deg;F</td>
+                                <td>72&deg;F</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br>
+                <br>
                 <article class="sec1">
                     <div>
                         <h2>Authorities identify victim of homicide</h2>
@@ -94,23 +96,23 @@
                                 <p>Anyone who has information about the death is encouraged to contact police.</p>
                     </div>
                 </article>
+        
         </main>
         
+
         <footer>
             <ul>
                 <li>Contact us:</li>
-                    <ul>
-                        <li>Phone: 555-682-7139</li>
-                        <li>Email: support@seidweather.com</li>
-                        <li>Mailing Address: 65 Main St, Preston, ID 83263</li>
-                    </ul>
-                </ul>
-
-                    <img id="map" src="images/area-map.jpg" alt="Area Map">
-
-                <p>&copy; 2019 | Rick Holmstead | <a href="#">Terms of Use</a> | <span id="currentdate"></span></p>
+                <li>Phone: 555-682-7139</li>
+                <li>Email: support@seidweather.com</li>
+                <li>Mailing Address: 65 Main St, Preston, ID 83263</li>
+            </ul>
+            <img id="map" src="images/area-map.jpg" alt="Area Map">
+            <p>&copy; 2019 | Rick Holmstead | <a href="#">Terms of Use</a> | <span id="currentdate"></span></p>
         </footer>
-        <script src="scripts/currentdate.js"></script>
-        <script src="scripts/hamburger.js"></script>
+
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/hamburger.js"></script>
+            <script src="scripts/windchill.js"></script>
     </body>
 </html>
