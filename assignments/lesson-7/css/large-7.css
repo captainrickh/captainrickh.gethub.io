@@ -23,6 +23,30 @@ nav li a {
   text-decoration: none;
 }
 
+.title{
+  float: left;
+}
+
+.current-conditions {
+  float: right;
+  width: 160px;
+  height: 74px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.932);
+  border: solid #edbc5a 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.current {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #28ba35;
+  line-height: 1.5rem;
+}
 
 
 
