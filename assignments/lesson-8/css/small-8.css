@@ -1,0 +1,209 @@
+/* CIT 230 - Prestion Home page small*/
+@import url('https://fonts.googleapis.com/css?family=Amarante|Spectral+SC');
+
+
+/*general*/
+* { text-align: center; }
+
+h2, h3, footer ul {
+    font-family: 'Amarante', cursive;
+}
+
+p {
+    font-family: 'Spectral SC', Gadget, sans-serif; 
+}
+
+
+
+/*Header*/
+header {
+  max-width: 67rem;
+	margin: 1rem auto;
+	background-color: #4b8c2c;
+	height: auto;
+  min-height: 130px;
+}
+header h1 {
+  font-size: 2rem;
+  color: #000000;
+  font-family: 'Amarante', cursive;
+}
+header div {
+    font-size: 1.3rem;
+    padding-bottom: 5px;
+    font-style: italic;
+}
+header img {
+    width: 175px;
+    height: auto;
+    float: left;
+    margin: 10px;
+    border: 1px solid #edbc5a;
+}
+.current-conditions {
+  display: none;
+}
+body {background: #f8eac4; }
+
+
+
+
+/*Menu Bar*/
+nav {
+  max-width:67rem;
+  margin: 1rem auto;
+  background: #28ba35;
+  margin-top: -17px;
+  border-top: 1px solid #edbc5a;
+}
+.navigation {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+.navigation li { display: none;}
+.navigation li:first-child { display: block;}
+.navigation li a { display: block;
+	color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: 1.25rem;
+}
+.navigation li a:hover {
+	background-color: #edbc5a);
+	color: rgba(0, 0, 0, 1);
+}
+.responsive li { display: block; }
+.active {
+  background-color: #edbc5a;
+  color: black;
+}
+
+
+
+
+/*Main Weather Summy*/
+main {
+  max-width: 820px; 
+  margin:0 auto;
+}
+h2 {
+  text-align: center; 
+  font-size:2.4rem;
+  text-shadow:3px 3px 5px #777;
+}
+.herodiv {
+  margin: 10px auto; 
+  position: relative;
+  }
+.heroimg{
+  width: 100%;
+  min-height: 387px;
+}
+.stats {
+	position: absolute;
+	top: 40px;
+	left: 90px;
+	background: #04b8e0c9;
+	border: 2px solid #000;
+	padding: 1rem;
+  box-shadow: 0 0 30px #fff;
+  }
+.stats p {
+  font-weight: bolder;
+}
+.stats h3 {
+  font-size: 18px;
+  border-bottom: 2px solid currentColor;
+}
+.value1 {
+  color: #cc5c00;
+  font-weight: bolder;
+}
+
+
+
+
+/*5Day Forcast*/
+.forecast {
+  display: none;
+}
+
+
+
+
+/*Local Artical*/
+article p {
+  font-family: Geneva, Verdana, sans-serif;
+}
+.sec1{
+  background-color: #edbc5a9f;
+}
+.sec1 h5 { margin-top: -30px; }
+.img1 {
+  float: right;
+  width: 200px;
+  height: auto;
+  box-shadow: 2px 2px 2px black;
+  margin-right: 15px;
+}
+
+
+
+
+/*Gallary Page*/
+.container { 
+  display:grid; 
+  grid-template-columns: 1fr;
+}
+img { 
+  height: auto;
+  margin: 0rem;
+  }
+figcaption {
+  font-size: 17px;
+  Font-weight: bold;
+}
+.shadow:hover {
+  box-shadow: 0 0 50px #333;
+}
+
+
+
+
+/*Footer*/
+footer {
+  max-width: 67rem;
+  margin: 10px auto;
+  Background: #4b8c2c;
+  padding-bottom: 10px;
+}
+footer img {
+    height: 200px;
+    border: 1px solid black;
+    float: center;
+}
+footer li{
+    list-style-type: none;
+}
+footer ul {
+  padding-inline-start: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+/* CIT 230 - Prestion Home page large*/
+@import url('https://fonts.googleapis.com/css?family=Amarante|Inconsolata');
+
+
+@media screen and (min-width:801px) {
+  
+/*Menu Bar Full*/  
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 10px;
+  background-color: #28ba35;
+}
+  
+nav li {
+  display:inline;
+  border-right: 1px solid #edbc5a;    
+}
+  
+nav li a {
+  color: white;
+  padding: 7px 10px;
+  text-decoration: none;
+}
+
+.title{
+  float: left;
+}
+
+.current-conditions {
+  float: right;
+  width: 160px;
+  height: 74px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.932);
+  border: solid #edbc5a 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.current {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #28ba35;
+  line-height: 1.5rem;
+}
+
+
+
+/*5Day Forcast*/
+.forecast {
+  display: inline;
+}
+
+
+
+
+
+/*Gallary Page*/
+.container { 
+  display:grid; 
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: -88px;
+}
+
+
+
+
+}
+
