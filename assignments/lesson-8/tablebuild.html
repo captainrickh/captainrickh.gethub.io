@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <title>Table Build</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Preston weather site. Rick, a student in CIT 230: Web Front-End Development at Brigham Young University-Idaho">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+            * { font-family: Ubuntu, sans-serif; text-align: center; }
+
+            body{
+                width:275px;
+                margin: 1rem auto;
+            }
+            table, th, td {
+                border: 1px solid lightgray;
+                border-collapse: collapse;
+                padding: 5px;
+            }
+            table {
+                box-shadow: 8px 8px 15px #628ca6;
+            }
+            thead {
+                background: #7fb9c2;
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+            tbody tr th {
+                background:#628ca6;
+                color: white;
+            }
+            #hilite {
+                background:#628ca6;
+                color: white;
+            }
+            tbody tr:nth-of-type(odd){
+                background:#e7ffed;
+            }
+            tbody tr:nth-of-type(even){
+                background:#e7f0ed;
+            }
+            tbody :nth-child(6) :first-child { 
+                font-style: italic;
+            }
+            tfoot{
+                font-size: 10px;
+                background: #7fb9c2;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">ACME Wildwest</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Period</th>
+                        <th>Sales</th>
+                        <th>Sales Goal</th>
+                    </tr>
+                    <tr>
+                        <td>August</td>
+                        <td>$3,590</td>
+                        <td>$4,000</td>
+                    </tr>
+                    <tr>
+                        <td>September</td>
+                        <td>$4,420</td>
+                        <td>$5,000</td>
+                    </tr>
+                    <tr>
+                        <td>October</td>
+                        <td>$4,870</td>
+                        <td>$5,000</td>
+                    </tr>
+                    <tr>
+                        <td>November</td>
+                        <td>$8,610</td>
+                        <td id="hilite">$7,500</td>
+                    </tr>
+                    <tr>
+                        <td>Black Friday</td>
+                        <td colspan="2">$3,200</td>
+                    </tr>
+                    <tr>
+                        <td>December</td>
+                        <td>$6,820</td>
+                        <td>$7,500</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Compiled 12.20.2020 by bRauls</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+    </body>
+</html>
