@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <title>Preston, ID | Weather</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Preston weather site. Rick, a student in CIT 230: Web Front-End Development at Brigham Young University-Idaho">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="css/small-8.css">
+        <link rel="stylesheet" href="css/medium-8.css">
+        <link rel="stylesheet" href="css/large-8.css">
+    </head>
+
+
+    <body>
+        <header>
+            <img src="images/weather-logo.jpg" alt="logo">
+            <section class="title">
+                <br>
+                <h1>Southeastern Idaho Weather</h1>
+                <div class="motto">"We're here for you weather or not."</div>
+            </section>
+            <div class="current-conditions">
+                <h3 class="current"><b>Currently: 56&deg;F</b></h3>
+            </div>
+        </header>
+
+
+        <nav>            
+            <ul class="navigation">
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="#index.html">Home</a></li>
+                <li><a href="preston-8.html">Preston</a></li>
+                <li><a href="#soda-springs.html">Soda Springs</a></li>
+                <li><a href="#fish-haven.html">Fish Haven</a></li>
+                <li><a href="storm-center.html" class="active">Storm Center</a></li>
+                <li><a href="gallery-8.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+
+        <main>
+
+            <form>
+
+                Full Name: <input type="text" name="fullname" required min="5" pattern="[A-Za-z]">
+                <br>
+                E-mail: <input type="email" name="email" placeholder="you@somthing.com">
+                <br>
+                Phone Number: <input type="tel" name="phonenumber" required>
+                <br>
+                Zip Code:  <input type="number" name="zipcode" required>
+                <br>
+                Storm Date: <input type="date" name="stormdate">
+                <br>
+                Storm Type: <input list="stormtypes" name="stormtype">
+                <datalist id="stormtypes">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+                <br>
+                Storm Severity: <input type="range" min="1" max="10">
+                <br>
+                Storm Region: <select name="storm-region">
+                                    <option selected disabled>--Select Region--</option>
+                                    <option value="fishhaven">Fish Haven</option>
+                                    <option value="preston">Preston</option>
+                                    <option value="sodasprings">Soda Springs</option>
+                              </select>
+                <br>
+                User In-danger? <br>
+                    <input type="radio" name="in-danger" value="yes">Yes!<br>
+                    <input type="radio" name="in-danger" value="yes">Maybe?<br>
+                    <input type="radio" name="in-danger" value="yes" checked>No<br>
+                Comments: <br><textarea rows="5" cols="30" maxlength="150"></textarea>
+                <br>
+                <input type="submit">
+
+            </form>
+        </main>
+        
+
+        <footer>
+            <ul>
+                <li>Contact us:</li>
+                <li>Phone: 555-682-7139</li>
+                <li>Email: support@seidweather.com</li>
+                <li>Mailing Address: 65 Main St, Preston, ID 83263</li>
+            </ul>
+            <img id="map" src="images/area-map.jpg" alt="Area Map">
+            <p>&copy; 2019 | Rick Holmstead | <a href="#">Terms of Use</a> | <span id="currentdate"></span></p>
+        </footer>
+
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/hamburger.js"></script>
+            <script src="scripts/windchill.js"></script>
+    </body>
+</html>
