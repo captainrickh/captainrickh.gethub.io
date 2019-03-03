@@ -14,14 +14,16 @@
 
 
     <body>
-
         <header>
             <img src="images/weather-logo.jpg" alt="logo">
-                <section class="headings">
-                    <br>
-                    <h1>Southeastern Idaho Weather</h1>
-                    <div class="motto">"We're here for you weather or not."</div>
-                </section>
+            <section class="title">
+                <br>
+                <h1>Southeastern Idaho Weather</h1>
+                <div class="motto">"We're here for you weather or not."</div>
+            </section>
+            <div class="current-conditions">
+                <h3 class="current"><b>Currently: 56&deg;F</b></h3>
+            </div>
         </header>
 
 
@@ -29,47 +31,22 @@
             <ul class="navigation">
                 <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;</a></li>
                 <li><a href="#index.html">Home</a></li>
-                <li><a href="preston-8.html" >Preston</a></li>
+                <li><a href="preston-8.html">Preston</a></li>
                 <li><a href="#soda-springs.html">Soda Springs</a></li>
                 <li><a href="#fish-haven.html">Fish Haven</a></li>
-                <li><a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery-8.html" class="active">Gallery</a></li>
+                <li><a href="stormcenter.html" class="active">Storm Center</a></li>
+                <li><a href="gallery-8.html">Gallery</a></li>
             </ul>
         </nav>
 
 
         <main>
-            <h2>Weather Gallery</h2>
-                
-            <div class="container">
-                <figure>
-                    <img class="shadow" src="images/snakeriver250.jpg">
-                    <figcaption>Cloudy: Snake River Idaho Falls, Idaho</figcaption>
-                </figure>
-                <figure>
-                    <img class="shadow" src="images/sandpoint250.jpg">
-                    <figcaption>Rain showers: Sandpoint, Idaho</figcaption>
-                </figure>
-                <figure>
-                    <img class="shadow" src="images/sunvalley250.jpg">
-                    <figcaption>Snow: Sun Valley, Idaho</figcaption>
-                </figure>
-                <figure>
-                    <img class="shadow" src="images/cabinet-mountains250.jpg">
-                    <figcaption>Overcast: Cabinet Mountains, Idaho</figcaption>
-                </figure>
-                <figure>
-                    <img class="shadow" src="images/lightningskys250.jpg">
-                    <figcaption>Storm Lightning: Idaho </figcaption>
-                </figure>
-                <figure>
-                    <img class="shadow" src="images/rathdrum250.jpg">
-                    <figcaption>Sunny: Rathdrum, Idaho</figcaption>
-                </figure>
-            </div>
-
+                <p>Thank you for your input.</p>    
+                <img src="https://media1.tenor.com/images/3599e15bf5e8a8a21e8ffd0437607c13/tenor.gif?itemid=10560265" alt="thank-you">
+                        
         </main>
         
+
         <footer>
             <ul>
                 <li>Contact us:</li>
@@ -83,5 +60,6 @@
 
             <script src="scripts/currentdate.js"></script>
             <script src="scripts/hamburger.js"></script>
+            <script src="scripts/windchill.js"></script>
     </body>
 </html>

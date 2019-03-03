@@ -73,7 +73,7 @@ nav {
 	font-size: 1.25rem;
 }
 .navigation li a:hover {
-	background-color: #edbc5a);
+	background-color: #edbc5a;
 	color: rgba(0, 0, 0, 1);
 }
 .responsive li { display: block; }
@@ -152,6 +152,25 @@ article p {
 }
 
 
+/*Footer*/
+footer {
+  max-width: 67rem;
+  margin: 10px auto;
+  Background: #4b8c2c;
+  padding-bottom: 10px;
+}
+footer img {
+    height: 200px;
+    border: 1px solid black;
+    float: center;
+}
+footer li{
+    list-style-type: none;
+}
+footer ul {
+  padding-inline-start: 0px;
+}
+
 
 
 /*Gallary Page*/
@@ -174,36 +193,54 @@ figcaption {
 
 
 
-/*Footer*/
-footer {
-  max-width: 67rem;
-  margin: 10px auto;
-  Background: #4b8c2c;
-  padding-bottom: 10px;
+/*Storm Center*/
+
+
+.stormform {
+ 	margin:10px auto;
+	max-width: 300px;
+	padding: 20px 12px 10px 0px;
+  font: 18px 'Spectral SC', Gadget, sans-serif;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.89);
 }
-footer img {
-    height: 200px;
-    border: 1px solid black;
-    float: center;
+.stormform li {
+  text-align: left;
+	list-style: none;
+	margin: 18px 8px 0 15px;
 }
-footer li{
-    list-style-type: none;
+.stormform label{
+	display:flex;
+  font-weight: bold;
+  text-align: left;
 }
-footer ul {
-  padding-inline-start: 0px;
+
+textarea, select{
+  width: 100%;
+	border:1px solid #BEBEBE;
+  margin:0 8px 0 0;
+  text-align: left;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.stormform input{
+  width: 100%;
+  text-align: left;
+}
+.stormform input[type=radio]{
+  width: 10%;
+ }
+.stormform input[type=submit], .stormform input[type=button]{
+  text-align: center;
+  border-radius: 10px;
+ 	background: #4B99AD;
+	padding: 8px 0;
+	border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.stormform input[type=submit]:hover, .stormform input[type=button]:hover{
+	background: rgb(72, 182, 209);
+}
+.stormform .required{
+	color:red;
+}
 
