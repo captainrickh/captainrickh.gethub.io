@@ -50,6 +50,7 @@ nav li a {
 
 
 
+
 /*5Day Forcast*/
 .forecast {
   max-width: 600px;
@@ -80,15 +81,15 @@ nav li a {
 
 
 
-
-
 /*Gallary Page*/
 .container { 
   display:grid; 
   grid-template-columns: 1fr 1fr 1fr;
   margin-left: -88px;
 }
-
+.shadow:hover {
+  box-shadow: 0 0 50px #333;
+}
 
 
 
