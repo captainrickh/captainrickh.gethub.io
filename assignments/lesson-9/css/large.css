@@ -33,7 +33,7 @@ nav li a {
   height: 74px;
   margin: 10px;
   background-color: rgba(255, 255, 255, 0.932);
-  border: solid #edbc5a 1px;
+  border: solid #fdf9f0 1px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,6 +76,9 @@ nav li a {
   height: 2.5em;
   font-weight: bold;
 }
+
+
+
 
 
 

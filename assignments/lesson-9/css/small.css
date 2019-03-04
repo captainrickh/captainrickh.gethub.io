@@ -5,11 +5,11 @@
 /*general*/
 * { text-align: center; }
 
-h2, h3, footer ul, th {
+h2, h3, footer ul, th{
     font-family: 'Amarante', cursive;
 }
 
-p, td {
+p, td{
     font-family: 'Spectral SC', Gadget, sans-serif; 
 }
 
@@ -162,13 +162,12 @@ footer {
 footer img {
     height: 200px;
     border: 1px solid black;
-    float: center;
-}
+  }
 footer li{
     list-style-type: none;
 }
 footer ul {
-  padding-inline-start: 0px;
+  padding-left: 0px;
 }
 
 

@@ -1,0 +1,28 @@
+/* CIT 230 - Prestion Home page medium*/
+@import url('https://fonts.googleapis.com/css?family=Amarante|Inconsolata');
+
+
+/* Menu Bar - medium and up views */
+@media (min-width: 545px) {
+.navigation li:first-child { display: none;	}
+.navigation li { display: block; flex: 1 1 auto; }
+.navigation, .container { flex-direction: row; }
+  
+.container { display:grid; grid-template-columns: 1fr 1fr;}
+
+.stormform {
+margin:25px auto;
+max-width: 550px;
+padding: 20px 25px 10px 13px;
+}
+
+
+
+
+
+
+
+
+
+
+}
