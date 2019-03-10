@@ -28,9 +28,8 @@ header h1 {
   color: #000000;
   font-family: 'Amarante', cursive;
 }
-header div {
+header section div {
     font-size: 1.3rem;
-    padding-bottom: 5px;
     font-style: italic;
 }
 header img {
@@ -40,7 +39,7 @@ header img {
     margin: 10px;
     border: 1px solid #edbc5a;
 }
-.current-conditions {
+.current-conditions, .ccb {
   display: none;
 }
 body {background: #f8eac4; }
@@ -191,8 +190,6 @@ figcaption {
 
 
 /*Storm Center*/
-
-
 .stormform {
  	margin:10px auto;
 	max-width: 300px;
@@ -241,3 +238,26 @@ textarea, select{
 	color:red;
 }
 
+
+
+/*Home Page*/
+.towninfo {
+  margin: 40px auto;
+  display: grid;
+  max-width: 350px;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem 2.5rem;
+}
+.towninfo div {
+  display: block;
+  border: 3px solid #edbc5a;
+  box-shadow: 0px 0px 20px 1px #04b8e0;
+  color: #352e26;
+  background-color: white;
+}
+.towninfo figure {
+  width:auto;
+  height:auto;
+  margin: 0px;
+  padding: 5px;
+}
