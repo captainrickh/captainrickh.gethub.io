@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <title>Preston, ID | Weather</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Preston weather site. Rick, a student in CIT 230: Web Front-End Development at Brigham Young University-Idaho">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    </head>
+
+
+    <body>
+
+        <header>
+            <img src="images/weather-logo.jpg" alt="logo">
+                <div class="current-conditions">
+                    <h3 class="current"><b>Enjoy the sites</b></h3>
+                </div>
+                <section class="headings">
+                    <br>
+                    <h1>Southeastern Idaho Weather</h1>
+                    <div class="motto">"We're here for you weather or not."</div>
+                </section>
+        </header>
+
+
+        <nav>            
+            <ul class="navigation">
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html" >Preston</a></li>
+                <li><a href="#soda-springs.html">Soda Springs</a></li>
+                <li><a href="#fish-haven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+            </ul>
+        </nav>
+
+
+        <main>
+            <h2>Weather Gallery</h2>
+                
+            <div class="container">
+                <figure>
+                    <img class="shadow" src="images/snakeriver250.jpg">
+                    <figcaption>Cloudy: Snake River Idaho Falls, Idaho</figcaption>
+                </figure>
+                <figure>
+                    <img class="shadow" src="images/sandpoint250.jpg">
+                    <figcaption>Rain showers: Sandpoint, Idaho</figcaption>
+                </figure>
+                <figure>
+                    <img class="shadow" src="images/sunvalley250.jpg">
+                    <figcaption>Snow: Sun Valley, Idaho</figcaption>
+                </figure>
+                <figure>
+                    <img class="shadow" src="images/cabinet-mountains250.jpg">
+                    <figcaption>Overcast: Cabinet Mountains, Idaho</figcaption>
+                </figure>
+                <figure>
+                    <img class="shadow" src="images/lightningskys250.jpg">
+                    <figcaption>Storm Lightning: Idaho </figcaption>
+                </figure>
+                <figure>
+                    <img class="shadow" src="images/rathdrum250.jpg">
+                    <figcaption>Sunny: Rathdrum, Idaho</figcaption>
+                </figure>
+            </div>
+
+        </main>
+        
+        <footer>
+            <ul>
+                <li>Contact us:</li>
+                <li>Phone: 555-682-7139</li>
+                <li>Email: support@seidweather.com</li>
+                <li>Mailing Address: 65 Main St, Preston, ID 83263</li>
+            </ul>
+            <img id="map" src="images/area-map.jpg" alt="Area Map">
+            <p>&copy; 2019 | Rick Holmstead | <a href="#">Terms of Use</a> | <span id="currentdate"></span></p>
+        </footer>
+
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/hamburger.js"></script>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <title>Preston, ID | Weather</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Preston weather site. Rick, a student in CIT 230: Web Front-End Development at Brigham Young University-Idaho">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    </head>
+
+
+    <body>
+        <header>
+            <img src="images/weather-logo.jpg" alt="logo">
+            <section class="title">
+                <br>
+                <h1>Southeastern Idaho Weather</h1>
+                <div class="motto">"We're here for you weather or not."</div>
+            </section>
+        </header>
+
+
+        <nav>            
+            <ul class="navigation">
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="#soda-springs.html">Soda Springs</a></li>
+                <li><a href="#fish-haven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html" class="active">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+
+        <main>
+                <p>Thank you for your input.</p>    
+                <img src="https://media1.tenor.com/images/3599e15bf5e8a8a21e8ffd0437607c13/tenor.gif?itemid=10560265" alt="thank-you">
+                        
+        </main>
+        
+
+        <footer>
+            <ul>
+                <li>Contact us:</li>
+                <li>Phone: 555-682-7139</li>
+                <li>Email: support@seidweather.com</li>
+                <li>Mailing Address: 65 Main St, Preston, ID 83263</li>
+            </ul>
+            <img id="map" src="images/area-map.jpg" alt="Area Map">
+            <p>&copy; 2019 | Rick Holmstead | <a href="#">Terms of Use</a> | <span id="currentdate"></span></p>
+        </footer>
+
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/hamburger.js"></script>
+            <script src="scripts/windchill.js"></script>
+    </body>
+</html>

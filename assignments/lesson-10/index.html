@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <title>Southeastern Idaho Weather Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Preston weather site. Rick, a student in CIT 230: Web Front-End Development at Brigham Young University-Idaho">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    </head>
+
+
+    <body>
+        <header>
+            <img src="images/weather-logo.jpg" alt="logo">
+            <div class="ccb">
+                <h3 class="cb"></h3>
+            </div>
+            <section class="title">
+                <br>
+                <h1>Southeastern Idaho Weather</h1>
+                <div class="motto">"We're here for you weather or not."</div>
+            </section>
+        </header>
+
+
+        <nav>            
+            <ul class="navigation">
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="index.html"class="active">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="#soda-springs.html">Soda Springs</a></li>
+                <li><a href="#fish-haven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+
+        <main>
+
+            <div class="towninfo">
+                <div>
+                    <section>
+                        <h1><span id="nameP"></span></h1>
+                        <p>Motto:
+                            <span id="mottoP"></span>
+                        </p>
+    
+                        <p>Year Founded:
+                            <span id="foundedP"></span>
+                        </p>
+    
+                        <p>Population:
+                            <span id="populationP"></span>
+                        </p>
+                        <p>Annual Rainfall:
+                            <span id="rainfallP"></span>
+                        </p>
+    
+                        <p>
+                            <a href="#">More info>>></a>
+                        </p>
+        
+                    </section>
+                    <section>
+                        <figure>
+                            <img src="images/homepreston.jpg" alt="clouds">
+                        </figure>
+                    </section>
+                </div>
+                <div>
+                    <section>
+                        <h1><span id="nameS"></span></h1>
+                        <p>Motto:
+                            <span id="mottoS"></span>
+                        </p>
+    
+                        <p>Year Founded:
+                            <span id="foundedS"></span>
+                        </p>
+    
+                        <p>Population:
+                            <span id="populationS"></span>
+                        </p>
+                        <p>Annual Rainfall:
+                            <span id="rainfallS"></span>
+                        </p>
+                        <p>
+                            <a href="#">More info>>></a>
+                        </p>
+    
+                    </section>
+                    <section>
+                        <figure>
+                            <img src="images/homesodasprings.jpg" alt="rainy">
+                        </figure>
+                    </section>
+                </div>
+                <div>
+                    <section>
+                        <h1><span id="nameF"></span></h1>
+                        <p>Motto:
+                            <span id="mottoF"></span>
+                        </p>
+    
+                        <p>Year Founded:
+                            <span id="foundedF"></span>
+                        </p>
+    
+                        <p>Population:
+                            <span id="populationF"></span>
+                        </p>
+                        <p>Annual Rainfall:
+                            <span id="rainfallF"></span>
+                        </p>
+                        <p>
+                            <a href="#">More info>>></a>
+                        </p>
+                        <br>
+                    </section>
+                    <section>
+                        <figure>
+                            <img src="images/homefishhaven.jpg" alt="windy">
+                        </figure>
+                    </section>
+                </div>
+            </div>
+            
+                <br>
+                <br>
+                <article class="sec1">
+                    <div>
+                        <h2>Annual Precipitation in Idaho</h2>
+                        <h5> March 01, 2019, BY someone</h5>
+                            <img class="img1" src="images/homestory2.jpg" alt="Walden Lovin">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </article>
+        
+        </main>
+        
+
+        <footer>
+            <ul>
+                <li>Contact us:</li>
+                <li>Phone: 555-682-7139</li>
+                <li>Email: support@seidweather.com</li>
+                <li>Mailing Address: 65 Main St, Preston, ID 83263</li>
+            </ul>
+            <img id="map" src="images/area-map.jpg" alt="Area Map">
+            <p>&copy; 2019 | Rick Holmstead | <a href="#">Terms of Use</a> | <span id="currentdate"></span></p>
+        </footer>
+
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/hamburger.js"></script>
+            <script src="scripts/towninfo.js"></script>
+    </body>
+</html>
