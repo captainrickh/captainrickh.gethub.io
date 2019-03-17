@@ -1,6 +1,6 @@
 
 var request = new XMLHttpRequest();
-request.open('GET', "https://byui-cit230.github.io/weather/data/towndata.json", true);
+request.open('GET', "https://byui-cit230.github.io/weather/data/towndata.json");
 request.responseType = 'json';
 request.send();
 request.onload = function () {
