@@ -24,32 +24,6 @@ var allData = jsonObj["towns"];
             events1.textContent = allData[i].events[1];
             events2.textContent = allData[i].events[2];
             document.getElementById("pEvent").appendChild(events0); document.getElementById("pEvent").appendChild(events1); document.getElementById("pEvent").appendChild(events2);
-        }
-        /*else if (name === "Soda Springs"){
-                        var townName = document.createElement('h1');
-            townName.textContent = towns[i].name;
-            var townMotto = document.createElement('h4');
-            townMotto.textContent = towns[i].motto;
-            var yearFounded = document.createElement('p');
-            yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
-            var population = document.createElement('p');
-            population.textContent = 'Current Population: ' + towns[i].currentPopulation;
-            var annRain = document.createElement('p');
-            annRain.textContent = 'Annual Rainfall: ' + towns[i].averageRainfall;
-            document.getElementById("sodaSpringsTownData").appendChild(townName); document.getElementById("sodaSpringsTownData").appendChild(townMotto); document.getElementById("sodaSpringsTownData").appendChild(yearFounded); document.getElementById("sodaSpringsTownData").appendChild(population); document.getElementById("sodaSpringsTownData").appendChild(annRain);
-        }
-                else if (name === "Fish Haven"){
-                        var townName = document.createElement('h1');
-            townName.textContent = towns[i].name;
-            var townMotto = document.createElement('h4');
-            townMotto.textContent = towns[i].motto;
-            var yearFounded = document.createElement('p');
-            yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
-            var population = document.createElement('p');
-            population.textContent = 'Current Population: ' + towns[i].currentPopulation;
-            var annRain = document.createElement('p');
-            annRain.textContent = 'Annual Rainfall: ' + towns[i].averageRainfall;
-            document.getElementById("fishHavenTownData").appendChild(townName); document.getElementById("fishHavenTownData").appendChild(townMotto); document.getElementById("fishHavenTownData").appendChild(yearFounded); document.getElementById("fishHavenTownData").appendChild(population); document.getElementById("fishHavenTownData").appendChild(annRain);
-        }*/
+       }
     }
 } 
