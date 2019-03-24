@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <title>Southeastern Idaho Weather Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Preston weather site. Rick, a student in CIT 230: Web Front-End Development at Brigham Young University-Idaho">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    </head>
+
+
+    <body>
+        <header>
+            <img src="images/weather-logo.jpg" alt="logo">
+            <div class="ccb">
+                <h3 class="cb"></h3>
+            </div>
+            <section class="title">
+                <br>
+                <h1>Southeastern Idaho Weather</h1>
+                <div class="motto">"We're here for you weather or not."</div>
+            </section>
+        </header>
+
+
+        <nav>            
+            <ul class="navigation">
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="index.html"class="active">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+
+        <main>
+
+            <div class="towninfo">
+                <div>
+                    <section>
+                        <h1><span id="nameP"></span></h1>
+                        <p>Motto:
+                            <span id="mottoP"></span>
+                        </p>
+    
+                        <p>Year Founded:
+                            <span id="foundedP"></span>
+                        </p>
+    
+                        <p>Population:
+                            <span id="populationP"></span>
+                        </p>
+                        <p>Annual Rainfall:
+                            <span id="rainfallP"></span>
+                        </p>
+    
+                        <p>
+                            <a href="preston.html">More info>>></a>
+                        </p>
+        
+                    </section>
+                    <section>
+                        <figure>
+                            <img src="images/homepreston.jpg" alt="clouds">
+                        </figure>
+                    </section>
+                </div>
+                <div>
+                    <section>
+                        <h1><span id="nameS"></span></h1>
+                        <p>Motto:
+                            <span id="mottoS"></span>
+                        </p>
+    
+                        <p>Year Founded:
+                            <span id="foundedS"></span>
+                        </p>
+    
+                        <p>Population:
+                            <span id="populationS"></span>
+                        </p>
+                        <p>Annual Rainfall:
+                            <span id="rainfallS"></span>
+                        </p>
+                        <p>
+                            <a href="sodasprings.html">More info>>></a>
+                        </p>
+    
+                    </section>
+                    <section>
+                        <figure>
+                            <img src="images/homesodasprings.jpg" alt="rainy">
+                        </figure>
+                    </section>
+                </div>
+                <div>
+                    <section>
+                        <h1><span id="nameF"></span></h1>
+                        <p>Motto:
+                            <span id="mottoF"></span>
+                        </p>
+    
+                        <p>Year Founded:
+                            <span id="foundedF"></span>
+                        </p>
+    
+                        <p>Population:
+                            <span id="populationF"></span>
+                        </p>
+                        <p>Annual Rainfall:
+                            <span id="rainfallF"></span>
+                        </p>
+                        <p>
+                            <a href="fishhaven.html">More info>>></a>
+                        </p>
+                        <br>
+                    </section>
+                    <section>
+                        <figure>
+                            <img src="images/homefishhaven.jpg" alt="windy">
+                        </figure>
+                    </section>
+                </div>
+            </div>
+            
+            <article class="sec1">
+                <div>
+                    <h2>Yearly Average Climate Conditions in Idaho</h2>
+                    <h5> March 01, 2019, BY someone</h5>
+                        <img class="img1" id="img2" src="images/homestory2.jpg" alt="Walden Lovin">
+                            <p><b>Idaho gets 16 inches of rain, on average, per year.</b><br>The US average is 39 inches of rain per year.</p>
+                            <p><b>Idaho averages 29 inches of snow per year.</b><br>The US average is 26 inches of snow per year.</p>
+                            <p><b>On average, there are 206 sunny days per year in Idaho.</b><br>The US average is 205 sunny days.</p>
+                            <p><b>Summer High:</b> the July high is around 90 degrees</p>
+                            <p><b>Winter Low:</b> the January low is 24</p>
+                            <p><b>Sperling's Comfort Index for Idaho is a 72 out of 100</b></p>
+                            <p><b>YOU SHOULD KNOW</b>Boise gets some kind of precipitation, on average, 88 days per year. Precipitation is rain, snow, sleet, or hail that falls to the ground. In order for precipitation to be counted you have to get at least .01 inches on the ground to measure.</p>
+                </div>
+            </article>
+        
+        </main>
+        
+
+        <footer>
+            <ul>
+                <li>Contact us:</li>
+                <li>Phone: 555-682-7139</li>
+                <li>Email: support@seidweather.com</li>
+                <li>Mailing Address: 65 Main St, Preston, ID 83263</li>
+            </ul>
+            <img id="map" src="images/area-map.jpg" alt="Area Map">
+            <p>&copy; 2019 | Rick Holmstead | <a href="#">Terms of Use</a> | <span id="currentdate"></span></p>
+        </footer>
+
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/hamburger.js"></script>
+            <script src="scripts/towninfo.js"></script>
+    </body>
+</html>
