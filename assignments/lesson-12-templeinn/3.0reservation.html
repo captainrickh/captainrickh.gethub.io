@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <title>Temple Inn & Suites Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Temple Inn & Suites home page. General info and services.">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="css/innsmall.css">
+        <link rel="stylesheet" href="css/innmedium.css">
+        <link rel="stylesheet" href="css/innlarge.css">
+    </head>
+
+
+    <body>
+        <nav>            
+            <ul class="navigation">
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="1home.html"class="active">Home</a></li>
+                <li><a href="2temple.html">Temples</a></li>
+                <li><a href="3.0reservation.html">Reservations</a></li>
+                <li><a href="4.0services.html">Services</a></li>
+                <li><a href="5contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+
+        <main>
+            <h2>Report A Storm</h2>
+            <form>
+                <ul class="stormform">
+                    <li>
+                        <label><span class="required">*</span>Full Name:</label>
+                        <input type="text" name="fullname" required minlength="5" pattern="[A-Z][A-Za-z' -]+">
+                    </li>
+                    <li>
+                        <label>Email:</label>
+                        <input type="email" name="email" placeholder="you@somthing.com">
+                    </li>
+                    <li>
+                        <label><span class="required">*</span>Phone Number:</label>
+                        <input type="tel" name="phone" required>
+                    </li>
+                    <li>
+                        <label><span class="required">*</span>Zip Code:</label>
+                        <input type="number" name="zipcode" required>
+                    </li>
+                    <li>
+                        <label>Storm Date:</label>
+                        <input type="date" name="stormdate">
+                    </li>
+                    <li>
+                        <label>Storm Type:</label>
+                        <input list="stormtypes" name="stormtype">
+                            <datalist id="stormtypes">
+                                <option value="Flash Flood">
+                                <option value="Hail">
+                                <option value="Hurricane">
+                                <option value="Thunderstorm">
+                                <option value="Tornado">
+                            </datalist>
+                    </li>
+                    <li>
+                        <label>Storm Severity:</label>
+                        <input type="range" name="severity" min="0" max="10">
+                    </li>
+                    <li>
+                        <label>Storm Region:</label>
+                        <select name="storm-region">
+                            <option selected disabled>--Select Region--</option>
+                            <option value="fishhaven">Fish Haven</option>
+                            <option value="preston">Preston</option>
+                            <option value="sodasprings">Soda Springs</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label>User In-danger?</label>
+                        <input type="radio" name="in-danger" value="yes"><b>Yes!</b><br>
+                        <input type="radio" name="in-danger" value="maybe"><b>Maybe?</b><br>
+                        <input type="radio" name="in-danger" value="no" checked><b>No</b>                        
+                    </li>
+                    <li>
+                        <label>Comments:</label>
+                        <textarea rows="5" cols="30" maxlength="150"></textarea>
+                    </li>
+                    <li>
+                        <input type="submit" value="Submit" formaction="thankyou.html"></button>
+                    </li>
+                </ul>
+            </form>
+        </main>
+        
+
+        <footer>
+            <ul>
+                <li>Contact us:</li>
+                <li>Phone: 555-682-7139</li>
+                <li>Email: support@seidweather.com</li>
+                <li>Mailing Address: 65 Main St, Preston, ID 83263</li>
+            </ul>
+            <img id="map" src="images/area-map.jpg" alt="Area Map">
+            <p>&copy; 2019 | Rick Holmstead | <a href="#">Terms of Use</a> | <span id="currentdate"></span></p>
+        </footer>
+
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/hamburger.js"></script>
+            <script src="scripts/windchill.js"></script>
+    </body>
+</html>
+0 - - - -1 - - - -2 - - - 3 - - - -4 - - - -5 - - - 6 - - - 7 - - - -8 - - - 9 - - - 10

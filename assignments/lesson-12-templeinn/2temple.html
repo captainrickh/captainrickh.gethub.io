@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <title>Temple Inn & Suites Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Temple Inn & Suites home page. General info and services.">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="css/innsmall.css">
+        <link rel="stylesheet" href="css/innmedium.css">
+        <link rel="stylesheet" href="css/innlarge.css">
+    </head>
+
+
+    <body>
+        <nav>            
+            <ul class="navigation">
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="1home.html"class="active">Home</a></li>
+                <li><a href="2temple.html">Temples</a></li>
+                <li><a href="3.0reservation.html">Reservations</a></li>
+                <li><a href="4.0services.html">Services</a></li>
+                <li><a href="5contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Preston, Idaho</h2>
+	            <div class="herodiv">
+                    <picture>
+                            <source media="(max-width: 350px)" srcset="images/preston350.jpg">
+                            <source media="(min-width: 351px)" srcset="images/preston800.jpg">
+                            <img class="heroimg" src="images/preston800" alt="hero image">
+                    </picture>
+                    
+                    <section class="stats">
+			            <h3><u>Weather Summary</u></h3>
+			                <p>Currently: <span class="value1" id="cw"></span></p>
+			                <p>High: <span class="value1" id="temp"></span></p>
+                            <p>Wind Chill: <span class="value1" id="wc"></span></p>
+                            <p>Humidity: <span class="value1" id="hum"></span></p>
+                            <p>Wind Speed: <span class="value1" id="speed"></span></p>
+		            </section>
+	            </div>
+
+                <section class="forecast">
+                    <h2>Preston 5 Day Forecast</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><span id="day1"></span></th>
+                                <th><span id="day2"></span></th>
+                                <th><span id="day3"></span></th>
+                                <th><span id="day4"></span></th>
+                                <th><span id="day5"></span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span id="temp1"></span>&deg;F</td>
+                                <td><span id="temp2"></span>&deg;F</td>
+                                <td><span id="temp3"></span>&deg;F</td>
+                                <td><span id="temp4"></span>&deg;F</td>
+                                <td><span id="temp5"></span>&deg;F</td>
+                            </tr>
+                            <tr>
+                                <td><img id="wimg1" src="" alt=""></td>
+                                <td><img id="wimg2" src="" alt=""></td>
+                                <td><img id="wimg3" src="" alt=""></td>
+                                <td><img id="wimg4" src="" alt=""></td>
+                                <td><img id="wimg5" src="" alt=""></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+               
+                <section class="events">
+                    <h2>Preston Town Events</h2>
+                        <p id="pEvent"></p>
+                        <br>
+                </section>
+
+                <article class="sec1">
+                    <div>
+                        <h2>Authorities identify victim of homicide</h2>
+                        <h5> JANUARY 29, 2019, BY REBECCA GREEN</h5>
+                            <img class="img1" src="images/wilden-e-lovin-jr.jpg" alt="Walden Lovin">
+                                <p>Authorities have identified a man who was found dead inside his home in Preston Saturday and said they are investigating the case as a homicide.</p>
+                                <p>According to the Franklin County Sheriff’s Office in Idaho, 31-year-old Wilden Everett Lovin Jr. was found dead inside his home near 500 South and 2200 East Saturday.</p>
+                                <p>The death was reported by someone who found Lovin deceased, and responding deputies suspected foul play based on evidence at the scene.</p>
+                                <p>The death has since been classified as a homicide and is being investigated by Preston Police assisted by State Crime Lab personnel and State Police Detectives.</p>
+                                <p>The cause and manner of the man’s death have not yet been released. Police have identified several persons of interest and are conducting interviews.</p>
+                                <p>“The victim was definitely killed, there’s no question about that: It was a homicide,” Sheriff Davis Frayer told Fox 13 News.</p>
+                                <p>Anyone who has information about the death is encouraged to contact police.</p>
+                    </div>
+                </article>
+        </main>
+
+        <footer>
+            <ul>
+                <li>Contact us:</li>
+                <li>Phone: 555-682-7139</li>
+                <li>Email: support@seidweather.com</li>
+                <li>Mailing Address: 65 Main St, Preston, ID 83263</li>
+            </ul>
+            <img id="map" src="images/area-map.jpg" alt="Area Map">
+            <p>Weather Data Provided By: <a href="https://openweathermap.org">openweathermap.org</a></p>
+            <p>&copy; 2019 | Rick Holmstead | <a href="#">Terms of Use</a> | <span id="currentdate"></span></p>
+        </footer>
+
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/hamburger.js"></script>
+            <script src="scripts/townapi.js"></script>
+            
+    </body>
+</html>

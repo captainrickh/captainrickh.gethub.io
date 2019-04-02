@@ -1,0 +1,283 @@
+/* CIT 230 - Prestion Home page small*/
+
+@import url('https://fonts.googleapis.com/css?family=Courgette|Kalam|Kaushan+Script|Marck+Script');
+
+/*general*/
+* { text-align: center; }
+
+h2, h3, footer ul, th{
+    font-family: 'Amarante', cursive;
+}
+
+p, td{
+    font-family: 'Spectral SC', Gadget, sans-serif; 
+}
+
+
+
+
+
+
+/*Menu Bar*/
+nav {
+  max-width: 58rem;
+  margin: 1rem auto;
+  background: #28ba35;
+  margin-top: 0px;
+  border-top: 1px solid #edbc5a;
+}
+.navigation {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+.navigation li { display: none;}
+.navigation li:first-child { display: block;}
+.navigation li a { display: block;
+	color: black;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: 1.25rem;
+}
+.navigation li a:hover {
+	background-color: #edbc5a;
+	color: rgba(0, 0, 0, 1);
+}
+.responsive li { display: block; }
+.active {
+  font-weight:bold;
+  background-color: #f8eac4;
+}
+
+
+
+
+
+/*Header*/
+header {
+  max-width: 58rem;
+	margin: 1rem auto;
+	background-color: #2A1200;
+	height: auto;
+  min-height: 130px;
+}
+header h1 {
+  font-size: 2rem;
+  color: #000000;
+  font-family: 'Amarante', cursive;
+}
+header section div {
+    font-size: 1.3rem;
+    font-style: italic;
+}
+header img {
+    width: 175px;
+    height: auto;
+    float: left;
+    margin: 10px;
+    border: 1px solid #edbc5a;
+}
+.current-conditions, .ccb {
+  display: none;
+}
+body {background: #f8eac4; }
+
+
+
+
+
+
+/*Main Weather Summy*/
+main {
+  max-width: 58rem; 
+  margin:0 auto;
+}
+h2 {
+  text-align: center; 
+  font-size:2.4rem;
+  text-shadow:3px 3px 5px #777;
+}
+.herodiv {
+  margin: 10px auto; 
+  position: relative;
+  }
+.heroimg{
+  width: 100%;
+  min-height: 387px;
+}
+.stats {
+	position: absolute;
+	top: 30px;
+	left: 90px;
+	background: #04b8e0c9;
+	border: 2px solid #000;
+	padding: 1rem;
+  box-shadow: 0 0 30px #fff;
+  font-size: 21px;
+  }
+.value1 {
+  color: #fff565;
+}
+
+
+
+
+/*5Day Forcast*/
+.forecast {
+  display: none;
+}
+
+
+
+
+/*Town Events*/
+.events p {
+  font-family: 'Spectral SC', Gadget, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.events{
+  margin-top: -8px;
+  background-color: #04b8e0;
+}
+
+
+
+/*Local Artical*/
+article p {
+  font-family: Geneva, Verdana, sans-serif;
+  text-align: left;
+  padding-left: 20px;
+}
+.sec1{
+  margin-top: -8px;
+  background-color: #edbc5a9f;
+  padding-bottom: 10px
+}
+.sec1 h5 { margin-top: -30px; }
+.img1 {
+  float: right;
+  width: 200px;
+  height: auto;
+  box-shadow: 2px 2px 2px black;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+#img2{
+  margin-left: 10px;
+}
+
+
+/*Footer*/
+footer {
+  max-width: 58rem; 
+  margin: 23px auto;
+  Background: #4b8c2c;
+  padding-bottom: 10px;
+}
+footer img {
+    height: 200px;
+    border: 1px solid black;
+  }
+footer li{
+    list-style-type: none;
+}
+footer ul {
+  padding-left: 0px;
+}
+
+
+
+
+
+/*Gallary Page*/
+.container { 
+  display:grid; 
+  grid-template-columns: 1fr;
+}
+img { 
+  height: auto;
+  margin: 0rem;
+  }
+figcaption {
+  font-size: 17px;
+  Font-weight: bold;
+}
+
+
+
+
+
+/*Storm Center*/
+.stormform {
+ 	margin:10px auto;
+	max-width: 300px;
+	padding: 20px 12px 10px 0px;
+  font: 18px 'Spectral SC', Gadget, sans-serif;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.89);
+}
+.stormform li {
+  text-align: left;
+	list-style: none;
+	margin: 18px 8px 0 15px;
+}
+.stormform label{
+	display:flex;
+  font-weight: bold;
+  text-align: left;
+}
+textarea, select{
+  width: 100%;
+	border:1px solid #BEBEBE;
+  margin:0 8px 0 0;
+  text-align: left;
+}
+.stormform input{
+  width: 100%;
+  text-align: left;
+}
+.stormform input[type=radio]{
+  width: 10%;
+}
+.stormform input[type=submit], .stormform input[type=button]{
+  text-align: center;
+  border-radius: 10px;
+ 	background: #4B99AD;
+	padding: 8px 0;
+	border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.stormform input[type=submit]:hover, .stormform input[type=button]:hover{
+	background: rgb(72, 182, 209);
+}
+.stormform .required{
+	color:red;
+}
+
+
+
+/*Home Page*/
+.towninfo {
+  margin: 40px auto;
+  display: grid;
+  max-width: 350px;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem 2.5rem;
+}
+.towninfo div {
+  display: block;
+  border: 3px solid #edbc5a;
+  box-shadow: 0px 0px 20px 1px #04b8e0;
+  color: #352e26;
+  background-color: white;
+}
+.towninfo figure {
+  width:auto;
+  height:auto;
+  margin: 0px;
+  padding: 5px;
+}

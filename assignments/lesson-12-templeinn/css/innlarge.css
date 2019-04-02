@@ -1,0 +1,134 @@
+/* CIT 230 - Prestion Home page large*/
+@import url('https://fonts.googleapis.com/css?family=Amarante|Inconsolata');
+
+
+@media screen and (min-width:801px) {
+
+ 
+/*Menu Bar Full*/  
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 10px;
+  background-color: #28ba35;
+}
+  
+nav li {
+  display:inline;
+  border-right: 1px solid #edbc5a;
+  border-left: 1px solid #edbc5a;     
+}
+  
+nav li a {
+  color: white;
+  padding: 7px 10px;
+  text-decoration: none;
+}
+
+
+
+/*Current Conditions*/
+.current-conditions {
+  float: right;
+  width: 175px;
+  height: 106px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.932);
+  border: solid #edbc5a 1px;
+  display: flex;
+  font-style: italic;
+  align-items: center;
+}
+.current {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.8rem;
+  color: #ec8d1f;
+  float: right;
+}
+.ccb {
+  float: right;
+  width: 175px;
+  height: 106px;
+  margin: 10px;
+  background-color: #4b8c2c;
+  display: flex;
+  font-style: italic;
+  align-items: center;
+}
+.cb {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.8rem;
+  color: #28ba35;
+  float: right;
+}
+#ct{
+  color: #28ba35;
+}
+
+
+
+/*5-Day Forcast*/
+.forecast {
+  display: flex;
+  border: 3px solid #edbc5a;
+  margin: 20px auto 0 auto;
+  border-spacing: 0;
+  background-color: #04b8e0;
+}
+.forecast h2{
+  margin: 0;
+  padding: 10px;
+}
+.forecast table th {
+  font-size: 22px;
+  border: 2px solid #edbc5a;
+  justify-content: center;
+  background-color: #28ba35;
+  width: 15em;
+  height: 2em;
+}
+.forecast table td {
+  font-size: 22px;
+  border: 2px solid #edbc5a;
+  height: 2em;
+  font-weight: bold;
+  background-color: #f8eac4;
+}
+
+
+
+
+/*Gallary Page*/
+.container { 
+  margin-left: -70px;
+  display:grid; 
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: -32px;
+}
+.shadow:hover {
+  box-shadow: 0 0 50px #333;
+}
+
+
+
+/*Home Page*/
+.towninfo {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0 2rem;
+  margin-left:-1px;
+}
+.img1 {
+  margin-right: 35px;
+}
+#img2{
+  margin-right: 55px;
+  margin-left: 35px;
+}
+
+
+
+
+}
+

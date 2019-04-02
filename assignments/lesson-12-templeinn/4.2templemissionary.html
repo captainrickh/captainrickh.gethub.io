@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <title>Temple Inn & Suites Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Temple Inn & Suites home page. General info and services.">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="css/innsmall.css">
+        <link rel="stylesheet" href="css/innmedium.css">
+        <link rel="stylesheet" href="css/innlarge.css">
+    </head>
+
+
+    <body>
+        <nav>            
+            <ul class="navigation">
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="1home.html"class="active">Home</a></li>
+                <li><a href="2temple.html">Temples</a></li>
+                <li><a href="3.0reservation.html">Reservations</a></li>
+                <li><a href="4.0services.html">Services</a></li>
+                <li><a href="5contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+
+        <main>
+            <h2>Weather Gallery</h2>
+                
+            <div class="container">
+                <figure>
+                    <img class="shadow" src="images/snakeriver250.jpg">
+                    <figcaption>Cloudy: Snake River Idaho Falls, Idaho</figcaption>
+                </figure>
+                <figure>
+                    <img class="shadow" src="images/sandpoint250.jpg">
+                    <figcaption>Rain showers: Sandpoint, Idaho</figcaption>
+                </figure>
+                <figure>
+                    <img class="shadow" src="images/sunvalley250.jpg">
+                    <figcaption>Snow: Sun Valley, Idaho</figcaption>
+                </figure>
+                <figure>
+                    <img class="shadow" src="images/cabinet-mountains250.jpg">
+                    <figcaption>Overcast: Cabinet Mountains, Idaho</figcaption>
+                </figure>
+                <figure>
+                    <img class="shadow" src="images/lightningskys250.jpg">
+                    <figcaption>Storm Lightning: Idaho </figcaption>
+                </figure>
+                <figure>
+                    <img class="shadow" src="images/rathdrum250.jpg">
+                    <figcaption>Sunny: Rathdrum, Idaho</figcaption>
+                </figure>
+            </div>
+
+        </main>
+        
+        <footer>
+            <ul>
+                <li>Contact us:</li>
+                <li>Phone: 555-682-7139</li>
+                <li>Email: support@seidweather.com</li>
+                <li>Mailing Address: 65 Main St, Preston, ID 83263</li>
+            </ul>
+            <img id="map" src="images/area-map.jpg" alt="Area Map">
+            <p>&copy; 2019 | Rick Holmstead | <a href="#">Terms of Use</a> | <span id="currentdate"></span></p>
+        </footer>
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/hamburger.js"></script>
+    </body>
+</html>
