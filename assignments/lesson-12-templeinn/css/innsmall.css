@@ -5,26 +5,21 @@
 /*general*/
 * { text-align: center; }
 
-h2, h3, footer ul, th{
-    font-family: 'Amarante', cursive;
+h2, h3 {
+    font-family: 'Courgette', cursive;
 }
-
-p, td{
-    font-family: 'Spectral SC', Gadget, sans-serif; 
+main {
+  max-width: 58rem; 
+  margin:0 auto;
 }
-
-
-
 
 
 
 /*Menu Bar*/
 nav {
-  max-width: 58rem;
-  margin: 1rem auto;
-  background: #28ba35;
-  margin-top: 0px;
-  border-top: 1px solid #edbc5a;
+  max-width: 600px;
+  margin: 5px auto;
+  background: #F5F5DC;
 }
 .navigation {
 	list-style-type: none;
@@ -36,69 +31,60 @@ nav {
 .navigation li { display: none;}
 .navigation li:first-child { display: block;}
 .navigation li a { display: block;
-	color: black;
+	color: #000000;
 	text-align: center;
-	padding: 1rem;
+	padding: 5px;
 	text-decoration: none;
 	font-size: 1.25rem;
 }
 .navigation li a:hover {
-	background-color: #edbc5a;
-	color: rgba(0, 0, 0, 1);
+  background-color: #2A1200;
+	color: #FFD700;
 }
 .responsive li { display: block; }
 .active {
   font-weight:bold;
-  background-color: #f8eac4;
+  background-color: #F5F5DC;
 }
-
-
 
 
 
 /*Header*/
 header {
   max-width: 58rem;
-	margin: 1rem auto;
-	background-color: #2A1200;
+	margin: 25px auto;
+	background-color: #0E62A3;
 	height: auto;
-  min-height: 130px;
+  min-height: 100px;
 }
 header h1 {
-  font-size: 2rem;
-  color: #000000;
-  font-family: 'Amarante', cursive;
+  font-size: 4rem;
+  color: #FFD700;
+  font-family: 'Kaushan Script', cursive;
 }
 header section div {
     font-size: 1.3rem;
     font-style: italic;
 }
 header img {
-    width: 175px;
+    width: 200px;
     height: auto;
     float: left;
-    margin: 10px;
-    border: 1px solid #edbc5a;
+    margin: -20px 10px;
+    border: 1px solid #2A1200;
 }
 .current-conditions, .ccb {
   display: none;
 }
-body {background: #f8eac4; }
+body {background: #F5F5DC; }
+.motto {font-family: 'Kalam'; font-size:24px;}
 
 
 
-
-
-
-/*Main Weather Summy*/
-main {
-  max-width: 58rem; 
-  margin:0 auto;
-}
-h2 {
+/*Call to Action*/
+.planner h3 {
   text-align: center; 
-  font-size:2.4rem;
-  text-shadow:3px 3px 5px #777;
+  font-size:24px;
 }
 .herodiv {
   margin: 10px auto; 
@@ -106,58 +92,66 @@ h2 {
   }
 .heroimg{
   width: 100%;
-  min-height: 387px;
+  min-height: 555px;
 }
-.stats {
+.planner {
 	position: absolute;
-	top: 30px;
+	top: 60px;
 	left: 90px;
-	background: #04b8e0c9;
-	border: 2px solid #000;
-	padding: 1rem;
-  box-shadow: 0 0 30px #fff;
-  font-size: 21px;
-  }
-.value1 {
-  color: #fff565;
+	background: rgba(118, 158, 123, 0.651);
+	border: 0px solid #2A1200;
+	padding: 15px;
 }
-
-
-
-
-/*5Day Forcast*/
-.forecast {
-  display: none;
+.plannerdata {
+  padding: 20px 12px 10px 0px;
+  font: 18px 'Spectral SC', Gadget, sans-serif;
+  box-shadow: 0px 0px 25px #FFD700;
 }
-
-
-
-
-/*Town Events*/
-.events p {
-  font-family: 'Spectral SC', Gadget, sans-serif;
-  font-size: 20px;
+.plannerdata li {
+  text-align: left;
+  list-style: none;
+  margin: 18px 8px 0 15px;
+}
+.plannerdata label{
+  display:flex;
   font-weight: bold;
+  text-align: left;
 }
-.events{
-  margin-top: -8px;
-  background-color: #04b8e0;
+.plannerdata input{
+  width: 100%;
+  text-align: left;
+}
+.plannerdata input[type=submit], .plannerdata input[type=button]{
+  text-align: center;
+  border-radius: 10px;
+  background: #2A1200;
+  padding: 8px 0;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.plannerdata input[type=submit]:hover, .plannerdata input[type=button]:hover{
+  background: rgb(72, 182, 209);
 }
 
 
 
-/*Local Artical*/
+/*Temple Artical*/
 article p {
   font-family: Geneva, Verdana, sans-serif;
   text-align: left;
   padding-left: 20px;
 }
 .sec1{
-  margin-top: -8px;
-  background-color: #edbc5a9f;
-  padding-bottom: 10px
+  background-color: #769E7B;
+  padding-bottom: 10px;
+  padding-top: 1Px;
 }
-.sec1 h5 { margin-top: -30px; }
+.sec1 h2 {font-size: 30px;
+}
+.sec1 h5 { margin-top: -20px; 
+  font-size: 18px;
+}
 .img1 {
   float: right;
   width: 200px;
@@ -171,11 +165,16 @@ article p {
 }
 
 
+
 /*Footer*/
 footer {
+  /*display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 10px;*/ 
+
   max-width: 58rem; 
   margin: 23px auto;
-  Background: #4b8c2c;
   padding-bottom: 10px;
 }
 footer img {
@@ -184,6 +183,8 @@ footer img {
   }
 footer li{
     list-style-type: none;
+    font-family: 'Kalam';
+    font-weight: bold;
 }
 footer ul {
   padding-left: 0px;
@@ -192,92 +193,162 @@ footer ul {
 
 
 
-
-/*Gallary Page*/
-.container { 
-  display:grid; 
-  grid-template-columns: 1fr;
-}
-img { 
-  height: auto;
-  margin: 0rem;
-  }
-figcaption {
-  font-size: 17px;
-  Font-weight: bold;
-}
-
-
-
-
-
-/*Storm Center*/
-.stormform {
- 	margin:10px auto;
-	max-width: 300px;
-	padding: 20px 12px 10px 0px;
-  font: 18px 'Spectral SC', Gadget, sans-serif;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.89);
-}
-.stormform li {
-  text-align: left;
-	list-style: none;
-	margin: 18px 8px 0 15px;
-}
-.stormform label{
-	display:flex;
-  font-weight: bold;
-  text-align: left;
-}
-textarea, select{
-  width: 100%;
-	border:1px solid #BEBEBE;
-  margin:0 8px 0 0;
-  text-align: left;
-}
-.stormform input{
-  width: 100%;
-  text-align: left;
-}
-.stormform input[type=radio]{
-  width: 10%;
-}
-.stormform input[type=submit], .stormform input[type=button]{
-  text-align: center;
-  border-radius: 10px;
- 	background: #4B99AD;
-	padding: 8px 0;
-	border: none;
-  color: #fff;
-  cursor: pointer;
-}
-.stormform input[type=submit]:hover, .stormform input[type=button]:hover{
-	background: rgb(72, 182, 209);
-}
-.stormform .required{
-	color:red;
-}
-
-
-
-/*Home Page*/
-.towninfo {
+/*Temple Page*/
+.templetitle{font-size: 36px;}
+.templeinfo {
   margin: 40px auto;
   display: grid;
-  max-width: 350px;
+  max-width: 400px;
   grid-template-columns: 1fr;
-  grid-gap: 1.5rem 2.5rem;
+  grid-gap: 2.5rem;
 }
-.towninfo div {
+.templeinfo div {
   display: block;
-  border: 3px solid #edbc5a;
-  box-shadow: 0px 0px 20px 1px #04b8e0;
-  color: #352e26;
+  border: 3px solid #2A1200;
+  box-shadow: 0px 0px 30px 7px #FFD700;
+  font-family: 'Kalam';
   background-color: white;
 }
-.towninfo figure {
+.templeinfo figure {
   width:auto;
   height:auto;
   margin: 0px;
-  padding: 5px;
+  padding: 10px;
 }
+
+
+
+/*Temple Reservation*/
+.reservationtitle{font-size: 36px;}
+.reservation {
+ margin:10px auto;
+ max-width: 300px;
+ padding: 20px 12px 10px 0px;
+ font: 18px 'Spectral SC', Gadget, sans-serif;
+ box-shadow: 0px 0px 30px 10px #769E7B;
+}
+.reservation li {
+ text-align: left;
+ list-style: none;
+ margin: 18px 8px 0 15px;
+}
+.reservation label {
+ display:flex;
+ font-weight: bold;
+ text-align: left;
+}
+textarea, select {
+ width: 100%;
+ border:1px solid #769E7B;
+ margin:0 8px 0 0;
+ text-align: left;
+}
+.reservation input {
+ width: 100%;
+ text-align: left;
+}
+.reservation input[type=radio] {
+ width: 10%;
+}
+.reservation input[type=submit], .reservation input[type=button]{
+ text-align: center;
+ border-radius: 10px;
+ background: #4B99AD;
+ padding: 8px 0;
+ border: none;
+ color: #fff;
+ cursor: pointer;
+}
+.reservation input[type=submit]:hover, .reservation input[type=button]:hover{
+ background: rgb(72, 182, 209);
+}
+.reservation .required{
+ color:red;
+}
+
+/*Thank You Page*/
+.thankyou {
+  font-family: 'Kalam';
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+
+      
+/*Services*/
+.leftcol, .rightcol {
+  max-width: 100%;
+  flex: 1 0 15em;
+  padding: 10px;
+}
+.sec1 li, .sec2 li {
+  padding:10px;
+  font-family: 'Kalam', Monaco, monospace;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  text-align: left;
+} 
+.sec1, .sec2, .sec3 {
+  border: 3px solid #2A1200;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 10px;  
+}
+.sec1{
+  background: #769E7B;
+}
+.sec2{
+  background: #FFD700 ;
+  margin-top: 15px;
+}
+.services, .amenities {
+  color: #2A1200 ;
+}
+.img1, .img2, .img3 {
+  width: 450px;
+  height: 300px;
+  box-shadow: 2px 2px 2px black;
+}
+
+
+
+
+/*Contact Us*/
+.list3 {
+list-style-type: none;
+padding:10px;
+font-family: 'Amarante', Monaco, monospace;
+font-size: 18px;
+line-height: 1.1em;
+}
+.sec3 li {
+  padding:10px;
+  font-family: 'Kalam', Monaco, monospace;
+  font-size: 1em;
+  line-height: .5em;
+  text-align: left;
+}
+
+
+.reservation input[type=send], .reservation input[type=button]{
+  text-align: center;
+  border-radius: 10px;
+  background: #4B99AD;
+  padding: 8px 0;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+ }
+.reservation input[type=send]:hover, .reservation input[type=button]:hover{
+  background: rgb(72, 182, 209);
+
+
+
+
+
+
+
+
+

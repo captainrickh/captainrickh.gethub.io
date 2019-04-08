@@ -17,25 +17,36 @@
         <nav>            
             <ul class="navigation">
                 <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;</a></li>
-                <li><a href="1home.html"class="active">Home</a></li>
+                <li><a href="1home.html">Home</a></li>
                 <li><a href="2temple.html">Temples</a></li>
-                <li><a href="3.0reservation.html">Reservations</a></li>
+                <li><a href="3.0reservation.html"class="active">Reservations</a></li>
                 <li><a href="4.0services.html">Services</a></li>
                 <li><a href="5contact.html">Contact Us</a></li>
             </ul>
         </nav>
+        
+        <header>
+            <img src="images/innlogoM.jpg" alt="logo">
+            <section class="title">
+                <h1>Temple Inn & Suites</h1>
+            </section>
+        </header>
 
 
         <main>
-            <h2>Report A Storm</h2>
+            <h2 class="reservationtitle">Make Your Reservation</h2>
             <form>
-                <ul class="stormform">
+                <ul class="reservation">
                     <li>
-                        <label><span class="required">*</span>Full Name:</label>
-                        <input type="text" name="fullname" required minlength="5" pattern="[A-Z][A-Za-z' -]+">
+                        <label><span class="required">*</span>First Name:</label>
+                        <input type="text" name="fullname" required minlength="3" pattern="[A-Z][A-Za-z' -]+">
                     </li>
                     <li>
-                        <label>Email:</label>
+                            <label><span class="required">*</span>Last Name:</label>
+                            <input type="text" name="fullname" required minlength="2" pattern="[A-Z][A-Za-z' -]+">
+                        </li>
+                    <li>
+                        <label><span class="required">*</span>Email:</label>
                         <input type="email" name="email" placeholder="you@somthing.com">
                     </li>
                     <li>
@@ -43,41 +54,240 @@
                         <input type="tel" name="phone" required>
                     </li>
                     <li>
-                        <label><span class="required">*</span>Zip Code:</label>
-                        <input type="number" name="zipcode" required>
-                    </li>
-                    <li>
-                        <label>Storm Date:</label>
-                        <input type="date" name="stormdate">
-                    </li>
-                    <li>
-                        <label>Storm Type:</label>
-                        <input list="stormtypes" name="stormtype">
-                            <datalist id="stormtypes">
-                                <option value="Flash Flood">
-                                <option value="Hail">
-                                <option value="Hurricane">
-                                <option value="Thunderstorm">
-                                <option value="Tornado">
-                            </datalist>
-                    </li>
-                    <li>
-                        <label>Storm Severity:</label>
-                        <input type="range" name="severity" min="0" max="10">
-                    </li>
-                    <li>
-                        <label>Storm Region:</label>
-                        <select name="storm-region">
+                        <label><span class="required">*</span>Temple Destination:</label>
+                        <select name="temple-locals">
                             <option selected disabled>--Select Region--</option>
-                            <option value="fishhaven">Fish Haven</option>
-                            <option value="preston">Preston</option>
-                            <option value="sodasprings">Soda Springs</option>
+                            <option value="abanigeria">Aba Nigeria</option>
+                            <option value="abidjanivorycoast">Abidjan Ivory Coast</option>
+                            <option value="accraghana">Accra Ghana</option>
+                            <option value="adelaideaustralia">Adelaide Australia</option>
+                            <option value="albuquerquenewmexico">Albuquerque New Mexico</option>
+                            <option value="anchoragealaska">Anchorage Alaska</option>
+                            <option value="apiasamoa">Apia Samoa</option>
+                            <option value="arequipaperu">Arequipa Peru</option>
+                            <option value="asunciónparaguay">Asunción Paraguay</option>
+                            <option value="atlantageorgia">Atlanta Georgia</option>
+                            <option value="aucklandnewzealand">Auckland New Zealand</option>
+                            <option value="bangkokthailand">Bangkok Thailand</option>
+                            <option value="barranquillacolombia">Barranquilla Colombia</option>
+                            <option value="batonrougelouisiana">Baton Rouge Louisiana</option>
+                            <option value="belémbrazil">Belém Brazil</option>
+                            <option value="bengaluruindia">Bengaluru India</option>
+                            <option value="bernswitzerland">Bern Switzerland</option>
+                            <option value="billingsmontana">Billings Montana</option>
+                            <option value="birminghamalabama">Birmingham Alabama</option>
+                            <option value="bismarcknorthdakota">Bismarck North Dakota</option>
+                            <option value="bogotácolombia">Bogotá Colombia</option>
+                            <option value="boiseidaho">Boise Idaho</option>
+                            <option value="bostonmassachusetts">Boston Massachusetts</option>
+                            <option value="bountifulutah">Bountiful Utah</option>
+                            <option value="brasíliabrazil">Brasília Brazil</option>
+                            <option value="brighamcityutah">Brigham City Utah</option>
+                            <option value="brisbaneaustralia">Brisbane Australia</option>
+                            <option value="buenosairesargentina">Buenos Aires Argentina</option>
+                            <option value="cagayandeorophilippines">Cagayan de Oro Philippines</option>
+                            <option value="calgaryalberta">Calgary Alberta</option>
+                            <option value="campinasbrazil">Campinas Brazil</option>
+                            <option value="caracasvenezuela">Caracas Venezuela</option>
+                            <option value="cardstonalberta">Cardston Alberta</option>
+                            <option value="cebucityphilippines">Cebu City Philippines</option>
+                            <option value="cedarcityutah">Cedar City Utah</option>
+                            <option value="chicagoillinois">Chicago Illinois</option>
+                            <option value="ciudadjuárezmexico">Ciudad Juárez Mexico</option>
+                            <option value="cochabambabolivia">Cochabamba Bolivia</option>
+                            <option value="coloniajuárezchihuahuamexico">Colonia Juárez Chihuahua Mexico</option>
+                            <option value="columbiariverwashington">Columbia River Washington</option>
+                            <option value="columbiasouthcarolina">Columbia South Carolina</option>
+                            <option value="columbusohio">Columbus Ohio</option>
+                            <option value="concepciónchile">Concepción Chile</option>
+                            <option value="copenhagendenmark">Copenhagen Denmark</option>
+                            <option value="córdobaargentina">Córdoba Argentina</option>
+                            <option value="curitibabrazil">Curitiba Brazil</option>
+                            <option value="dallastexas">Dallas Texas</option>
+                            <option value="davaophilippines">Davao Philippines</option>
+                            <option value="denvercolorado">Denver Colorado</option>
+                            <option value="detroitmichigan">Detroit Michigan</option>
+                            <option value="draperutah">Draper Utah</option>
+                            <option value="durbansouthafrica">Durban South Africa</option>
+                            <option value="edmontonalberta">Edmonton Alberta</option>
+                            <option value="fortcollinscolorado">Fort Collins Colorado</option>
+                            <option value="fortlauderdaleflorida">Fort Lauderdale Florida</option>
+                            <option value="fortalezabrazil">Fortaleza Brazil</option>
+                            <option value="frankfurtgermany">Frankfurt Germany</option>
+                            <option value="freiberggermany">Freiberg Germany</option>
+                            <option value="fresnocalifornia">Fresno California</option>
+                            <option value="fukuokajapan">Fukuoka Japan</option>
+                            <option value="gilbertarizona">Gilbert Arizona</option>
+                            <option value="greatermanilaphilippines">Greater Manila Philippines</option>
+                            <option value="guadalajaramexico">Guadalajara Mexico</option>
+                            <option value="guatemalacityguatemala">Guatemala City Guatemala</option>
+                            <option value="guayaquilecuador">Guayaquil Ecuador</option>
+                            <option value="halifaxnovascotia">Halifax Nova Scotia</option>
+                            <option value="hamiltonnewzealand">Hamilton New Zealand</option>
+                            <option value="hararezimbabwe">Harare Zimbabwe</option>
+                            <option value="hartfordconnecticut">Hartford Connecticut</option>
+                            <option value="helsinkifinland">Helsinki Finland</option>
+                            <option value="hermosillosonoramexico">Hermosillo Sonora Mexico</option>
+                            <option value="hongkongchina">Hong Kong China</option>
+                            <option value="houstontexas">Houston Texas</option>
+                            <option value="idahofallsidaho">Idaho Falls Idaho</option>
+                            <option value="indianapolisindiana">Indianapolis Indiana</option>
+                            <option value="johannesburgsouthafrica">Johannesburg South Africa</option>
+                            <option value="jordanriverutah">Jordan River Utah</option>
+                            <option value="kansascitymissouri">Kansas City Missouri</option>
+                            <option value="kinshasademocraticrepublicofthecongo">Kinshasa Democratic Republic of the Congo</option>
+                            <option value="konahawaii">Kona Hawaii</option>
+                            <option value="kyivukraine">Kyiv Ukraine</option>
+                            <option value="lagosnigeria">Lagos Nigeria</option>
+                            <option value="laiehawaii">Laie Hawaii</option>
+                            <option value="lasvegasnevada">Las Vegas Nevada</option>
+                            <option value="laytonutah">Layton Utah</option>
+                            <option value="limaperulosolivos">Lima Peru Los Olivos</option>
+                            <option value="limaperu">Lima Peru</option>
+                            <option value="lisbonportugal">Lisbon Portugal</option>
+                            <option value="loganutah">Logan Utah</option>
+                            <option value="londonengland">London England</option>
+                            <option value="losangelescalifornia">Los Angeles California</option>
+                            <option value="louisvillekentucky">Louisville Kentucky</option>
+                            <option value="lubbocktexas">Lubbock Texas</option>
+                            <option value="madridspain">Madrid Spain</option>
+                            <option value="managuanicaragua">Managua Nicaragua</option>
+                            <option value="manausbrazil">Manaus Brazil</option>
+                            <option value="manhattannewyork">Manhattan New York</option>
+                            <option value="manilaphilippines">Manila Philippines</option>
+                            <option value="mantiutah">Manti Utah</option>
+                            <option value="medfordoregon">Medford Oregon</option>
+                            <option value="melbourneaustralia">Melbourne Australia</option>
+                            <option value="memphistennessee">Memphis Tennessee</option>
+                            <option value="mendozaargentina">Mendoza Argentina</option>
+                            <option value="méridamexico">Mérida Mexico</option>
+                            <option value="meridianidaho">Meridian Idaho</option>
+                            <option value="mesaarizona">Mesa Arizona</option>
+                            <option value="mexicocitymexico">Mexico City Mexico</option>
+                            <option value="monterreymexico">Monterrey Mexico</option>
+                            <option value="montevideouruguay">Montevideo Uruguay</option>
+                            <option value="monticelloutah">Monticello Utah</option>
+                            <option value="montrealquebec">Montreal Quebec</option>
+                            <option value="mounttimpanogosutah">Mount Timpanogos Utah</option>
+                            <option value="nairobikenya">Nairobi Kenya</option>
+                            <option value="nashvilletennessee">Nashville Tennessee</option>
+                            <option value="nauvooillinois">Nauvoo Illinois</option>
+                            <option value="newportbeachcalifornia">Newport Beach California</option>
+                            <option value="nuku'alofatonga">Nuku'alofa Tonga</option>
+                            <option value="oaklandcalifornia">Oakland California</option>
+                            <option value="oaxacamexico">Oaxaca Mexico</option>
+                            <option value="ogdenutah">Ogden Utah</option>
+                            <option value="oklahomacityoklahoma">Oklahoma City Oklahoma</option>
+                            <option value="oquirrhmountainutah">Oquirrh Mountain Utah</option>
+                            <option value="orlandoflorida">Orlando Florida</option>
+                            <option value="palmyranewyork">Palmyra New York</option>
+                            <option value="panamacitypanama">Panama City Panama</option>
+                            <option value="papeetetahiti">Papeete Tahiti</option>
+                            <option value="parisfrance">Paris France</option>
+                            <option value="paysonutah">Payson Utah</option>
+                            <option value="perthaustralia">Perth Australia</option>
+                            <option value="philadelphiapennsylvania">Philadelphia Pennsylvania</option>
+                            <option value="phnompenhcambodia">Phnom Penh Cambodia</option>
+                            <option value="phoenixarizona">Phoenix Arizona</option>
+                            <option value="pocatelloidaho">Pocatello Idaho</option>
+                            <option value="port-au-princehaiti">Port-Au-Prince Haiti</option>
+                            <option value="portlandoregon">Portland Oregon</option>
+                            <option value="portoalegrebrazil">Porto Alegre Brazil</option>
+                            <option value="praiacapeverde">Praia Cape Verde</option>
+                            <option value="prestonengland">Preston England</option>
+                            <option value="provocitycenter">Provo City Center</option>
+                            <option value="provoutah">Provo Utah</option>
+                            <option value="pueblamexico">Puebla Mexico</option>
+                            <option value="quetzaltenangoguatemala">Quetzaltenango Guatemala</option>
+                            <option value="quitoecuador">Quito Ecuador</option>
+                            <option value="raleighnorthcarolina">Raleigh North Carolina</option>
+                            <option value="recifebrazil">Recife Brazil</option>
+                            <option value="redlandscalifornia">Redlands California</option>
+                            <option value="reginasaskatchewan">Regina Saskatchewan</option>
+                            <option value="renonevada">Reno Nevada</option>
+                            <option value="rexburgidaho">Rexburg Idaho</option>
+                            <option value="richmondvirginia">Richmond Virginia</option>
+                            <option value="riodejaneirobrazil">Rio de Janeiro Brazil</option>
+                            <option value="romeitaly">Rome Italy</option>
+                            <option value="russia">Russia</option>
+                            <option value="sacramentocalifornia">Sacramento California</option>
+                            <option value="saltlake">Salt Lake</option>
+                            <option value="saltaargentina">Salta Argentina</option>
+                            <option value="salvadorbrazil">Salvador Brazil</option>
+                            <option value="sanantoniotexas">San Antonio Texas</option>
+                            <option value="sandiegocalifornia">San Diego California</option>
+                            <option value="sanjosécostarica">San José Costa Rica</option>
+                            <option value="sanjuanpuertorico">San Juan Puerto Rico</option>
+                            <option value="sansalvadorelsalvador">San Salvador El Salvador</option>
+                            <option value="santiagochile">Santiago Chile</option>
+                            <option value="santodomingodominicanrepublic">Santo Domingo Dominican Republic</option>
+                            <option value="sãopaulobrazil">São Paulo Brazil</option>
+                            <option value="sapporojapan">Sapporo Japan</option>
+                            <option value="saratogaspringsutah">Saratoga Springs Utah</option>
+                            <option value="seattlewashington">Seattle Washington</option>
+                            <option value="seoulkorea">Seoul Korea</option>
+                            <option value="snowflakearizona">Snowflake Arizona</option>
+                            <option value="spokanewashington">Spokane Washington</option>
+                            <option value="st.georgeutah">St. George Utah</option>
+                            <option value="st.louismissouri">St. Louis Missouri</option>
+                            <option value="st.paulminnesota">St. Paul Minnesota</option>
+                            <option value="starvalleywyoming">Star Valley Wyoming</option>
+                            <option value="stockholmsweden">Stockholm Sweden</option>
+                            <option value="suvafiji">Suva Fiji</option>
+                            <option value="sydneyaustralia">Sydney Australia</option>
+                            <option value="taipeitaiwan">Taipei Taiwan</option>
+                            <option value="tampicomexico">Tampico Mexico</option>
+                            <option value="tegucigalpahonduras">Tegucigalpa Honduras</option>
+                            <option value="thegilavalleyarizona">The Gila Valley Arizona</option>
+                            <option value="thehaguenetherlands">The Hague Netherlands</option>
+                            <option value="tijuanamexico">Tijuana Mexico</option>
+                            <option value="tokyojapan">Tokyo Japan</option>
+                            <option value="torontoontario">Toronto Ontario</option>
+                            <option value="trujilloperu">Trujillo Peru</option>
+                            <option value="tucsonarizona">Tucson Arizona</option>
+                            <option value="tuxtlagutiérrezmexico">Tuxtla Gutiérrez Mexico</option>
+                            <option value="twinfallsidaho">Twin Falls Idaho</option>
+                            <option value="urdanetaphilippines">Urdaneta Philippines</option>
+                            <option value="vancouverbritishcolumbia">Vancouver British Columbia</option>
+                            <option value="veracruzmexico">Veracruz Mexico</option>
+                            <option value="vernalutah">Vernal Utah</option>
+                            <option value="villahermosamexico">Villahermosa Mexico</option>
+                            <option value="washingtoncountyutah">Washington County Utah</option>
+                            <option value="washingtond.c.">Washington D.C.</option>
+                            <option value="winnipegmanitoba">Winnipeg Manitoba</option>
+                            <option value="winterquartersnebraska">Winter Quarters Nebraska</option>
+                            <option value="yigoguam">Yigo Guam</option>
+                            <option value="yubacitycalifornia">Yuba City California</option>
                         </select>
                     </li>
                     <li>
-                        <label>User In-danger?</label>
-                        <input type="radio" name="in-danger" value="yes"><b>Yes!</b><br>
-                        <input type="radio" name="in-danger" value="maybe"><b>Maybe?</b><br>
+                        <label><span class="required">*</span>Check-In Date:</label>
+                        <input type="date" name="checkin">
+                    </li>
+                    <li>
+                        <label><span class="required">*</span>Check-Out Date:</label>
+                        <input type="date" name="checkout">
+                    </li>
+                    <li>
+                        <label><span class="required">*</span>Number Of Rooms:</label>
+                        <input type="number" name="rooms" required>
+                    </li>
+                    <li>
+                        <label><span class="required">*</span>Rooms Type:</label>
+                        <input list="roomstypes" name="roomstype">
+                            <datalist id="roomstypes">
+                                <option value="Airbnb">
+                                <option value="Camping">
+                                <option value="Boat/Cruze">
+                                <option value="Hotel">
+                                <option value="Motel">
+                                <option value="Motorhome">
+                                <option value="Resort">
+                            </datalist>
+                    </li>
+                    <li>
+                        <label>Special Accomidations?</label>
+                        <input type="radio" name="in-danger" value="yes"><b>Yes</b><br>
                         <input type="radio" name="in-danger" value="no" checked><b>No</b>                        
                     </li>
                     <li>
@@ -85,8 +295,9 @@
                         <textarea rows="5" cols="30" maxlength="150"></textarea>
                     </li>
                     <li>
-                        <input type="submit" value="Submit" formaction="thankyou.html"></button>
+                        <input type="submit" value="Submit" formaction="3.1thankyou.html"></button>
                     </li>
+                    
                 </ul>
             </form>
         </main>
@@ -95,17 +306,15 @@
         <footer>
             <ul>
                 <li>Contact us:</li>
-                <li>Phone: 555-682-7139</li>
-                <li>Email: support@seidweather.com</li>
-                <li>Mailing Address: 65 Main St, Preston, ID 83263</li>
+                <li>Phone: 1-800-555-7139</li>
+                <li>Email: support@templeinn.com</li>
+                <li>Mailing Address: 4800 Montgomery Ln #300,  Bethesda, MD 20814</li>
             </ul>
-            <img id="map" src="images/area-map.jpg" alt="Area Map">
+
             <p>&copy; 2019 | Rick Holmstead | <a href="#">Terms of Use</a> | <span id="currentdate"></span></p>
         </footer>
 
             <script src="scripts/currentdate.js"></script>
             <script src="scripts/hamburger.js"></script>
-            <script src="scripts/windchill.js"></script>
     </body>
 </html>
-0 - - - -1 - - - -2 - - - 3 - - - -4 - - - -5 - - - 6 - - - 7 - - - -8 - - - 9 - - - 10

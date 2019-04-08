@@ -17,102 +17,85 @@
         <nav>            
             <ul class="navigation">
                 <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;</a></li>
-                <li><a href="1home.html"class="active">Home</a></li>
+                <li><a href="1home.html">Home</a></li>
                 <li><a href="2temple.html">Temples</a></li>
                 <li><a href="3.0reservation.html">Reservations</a></li>
                 <li><a href="4.0services.html">Services</a></li>
-                <li><a href="5contact.html">Contact Us</a></li>
+                <li><a href="5contact.html"class="active">Contact Us</a></li>
             </ul>
         </nav>
+        
+        <header>
+            <img src="images/innlogoM.jpg" alt="logo">
+            <section class="title">
+                <h1>Temple Inn & Suites</h1>
+            </section>
+        </header>
+
 
         <main>
-            <h2>Soda Springs, Idaho</h2>
-	            <div class="herodiv">
-                    <picture>
-                        <source media="(max-width: 350px)" srcset="images/cit230_image_franklinOriginal350.jpg">
-                        <source media="(min-width: 351px)" srcset="images/cit230_image_franklinOriginal800.jpg">
-                        <img class="heroimg" src="images/cit230_image_franklinOriginal800" alt="hero image">
-                    </picture>
+            <h2 class="reservationtitle">For Additional Questions or Other Matters:</h2>
+            <section class="sec3"> 
+                <div class="leftcol">
+                    <ul class="list3">
+                        <li>Email: support@templeinn.com</li><br>
+                        <li>Phone:</li>
+                            <ul class="list3">
+                                <li class="indent">Local: 301-997-7238</li>
+                                <li class="indent">Toll Free: 1-800-555-7139</li><br>
+                            </ul>
+                        <li>Address:</li>
+                            <ul class="list3">
+                                <li class="indent">4800 Montgomery Ln #300</li>
+                                <li class="indent">Bethesda, MD 20814</li>
+                            </ul>
+                    </ul>
+                </div>
                     
-                    <section class="stats">
-			            <h3>Weather Summary</h3>
-			                <p>Currently: <span class="value1" id="cw"></span></p>
-			                <p>High: <span class="value1" id="temp"></span></p>
-                            <p>Wind Chill: <span class="value1" id="wc"></span></p>
-                            <p>Humidity: <span class="value1" id="hum"></span></p>
-                            <p>Wind Speed: <span class="value1" id="speed"></span></p>
-		            </section>
-	            </div>
+                <div class="rightcol">
+                    <img class="img3" src="https://cdn.glitch.com/e8353251-274d-4743-a9c1-d064a95e5278%2Fcontactus.jpg?1550526089340" alt="owner Rick">
 
-                <section class="forecast">
-                    <h2>SodaSprings 5 Day Forecast</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th><span id="day1"></span></th>
-                                <th><span id="day2"></span></th>
-                                <th><span id="day3"></span></th>
-                                <th><span id="day4"></span></th>
-                                <th><span id="day5"></span></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><span id="temp1"></span>&deg;F</td>
-                                <td><span id="temp2"></span>&deg;F</td>
-                                <td><span id="temp3"></span>&deg;F</td>
-                                <td><span id="temp4"></span>&deg;F</td>
-                                <td><span id="temp5"></span>&deg;F</td>
-                            </tr>
-                            <tr>
-                                <td><img id="wimg1" src="" alt=""></td>
-                                <td><img id="wimg2" src="" alt=""></td>
-                                <td><img id="wimg3" src="" alt=""></td>
-                                <td><img id="wimg4" src="" alt=""></td>
-                                <td><img id="wimg5" src="" alt=""></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-               
-                <section class="events">
-                    <h2>Soda Springs Town Events</h2>
-                        <p id="pEvent" ></p>
-                        <br>
-                </section>
-
-                <article class="sec1">
-                    <div>
-                        <h2>Residents Experiencing Mysterious Flooding</h2>
-                        <h5> March 03, 2019, BY John Smith</h5>
-                            <img class="img1" src="images/watertarget.jpg" alt="Flooded Range">
-                                <p>Richard Johnson has been living in his Soda Springs home for over 20 years. In the winter of 2016, he first encountered a problem that would change his day to day life.</p>
-                                <p>"We had a big rain and snow storm and started seeping in around the, where the wall meets the floor, and hasn't stopped since," said Johnson. </p>
-                                <p>Now fast forward two-and-a-half years, the mysterious flooding in Johnson's basement has only gotten worse.</p>
-                                <p>Since the flooding began in Johnson's home two years ago, his neighbors progressively became introduced to the flooding as well.</p>
-                                <p>One neighbor sold their property because of it, another nearby house was taken off the housing market because it was ruled unlivable, and one neighbor had her first encounter only a week ago.</p>
-                                <p>Another local area experiencing this is the soda springs shooting complex, about a mile from Johnson's neighborhood.</p>
-                                <p>The flooding has taken up most of the 300-yard shooting range, and while everyone has their theories about what this water could be stemming from, nobody has real answers.</p>
-                                <p>But if things do continue to worsen, Johnson's home of twenty plus years could be seeing its last days. "Probably fill in the basement. Or tear the house down, that's the two options right now," said Johnson.</p>
-                    </div>
-                </article>
+                </div>
+                
+                
+            </section>
+            
+            <form>
+                <ul class="reservation">
+                    <li>
+                        <label><span class="required">*</span>Full Name:</label>
+                        <input type="text" name="fullname" required minlength="3" pattern="[A-Z][A-Za-z' -]+">
+                    </li>
+                    <li>
+                        <label><span class="required">*</span>Email:</label>
+                        <input type="email" name="email" placeholder="you@somthing.com">
+                    </li>
+                    <li>
+                        <label><span class="required">*</span>Phone Number:</label>
+                        <input type="tel" name="phone" required>
+                    </li>
+                    <li>
+                        <label>Subject:</label>
+                        <input type="text" name="subject" required minlength="2" pattern="[A-Z][A-Za-z' -]+">                       
+                    </li>
+                    <li>
+                        <label>Comments:</label>
+                        <textarea rows="5" cols="30" maxlength="150"></textarea>
+                    </li>
+                    <li>
+                        <input type="send" value="send" formaction="#email:support@templeinn.com.html"></button>
+                    </li>
+                    
+                </ul>
+            </form>
         </main>
+        
 
         <footer>
-            <ul>
-                <li>Contact us:</li>
-                <li>Phone: 555-682-7139</li>
-                <li>Email: support@seidweather.com</li>
-                <li>Mailing Address: 65 Main St, Preston, ID 83263</li>
-            </ul>
-            <img id="map" src="images/area-map.jpg" alt="Area Map">
-            <p>Weather Data Provided By: <a href="https://openweathermap.org">openweathermap.org</a></p>
             <p>&copy; 2019 | Rick Holmstead | <a href="#">Terms of Use</a> | <span id="currentdate"></span></p>
         </footer>
 
             <script src="scripts/currentdate.js"></script>
             <script src="scripts/hamburger.js"></script>
-            <script src="scripts/townapi.js"></script>
-            
     </body>
 </html>

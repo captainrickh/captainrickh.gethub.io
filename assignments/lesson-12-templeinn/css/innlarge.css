@@ -8,22 +8,61 @@
 /*Menu Bar Full*/  
 nav ul {
   list-style-type: none;
-  margin: 0px;
-  padding: 10px;
-  background-color: #28ba35;
-}
-  
+  background-color: #F5F5DC;
+  }
 nav li {
   display:inline;
-  border-right: 1px solid #edbc5a;
-  border-left: 1px solid #edbc5a;     
+  border-right: 1px solid #000000;     
 }
-  
 nav li a {
   color: white;
   padding: 7px 10px;
   text-decoration: none;
 }
+
+
+
+/*Call to Action*/
+.planner h3 {
+  text-align: center; 
+}
+.planner {
+	position: absolute;
+	top: 60px;
+	left: 90px;
+	background: rgba(118, 158, 123, 0.651);
+	border: 1px solid #2A1200;
+	padding: 1rem;
+  box-shadow: 0 0 35px #FFD700;
+  font-size: 21px;
+}
+
+.planner {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.planner li { display: none;
+  display: flex;
+}
+  
+
+
+/*Temple Page*/
+.templeinfo {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem 4rem;
+  margin-left: 145px;
+  max-width: 560px;
+}
+
+
+
+
+
+
 
 
 
@@ -69,63 +108,33 @@ nav li a {
 
 
 
-/*5-Day Forcast*/
-.forecast {
-  display: flex;
-  border: 3px solid #edbc5a;
-  margin: 20px auto 0 auto;
-  border-spacing: 0;
-  background-color: #04b8e0;
-}
-.forecast h2{
-  margin: 0;
+/*Contact Us*/
+.leftcol, .rightcol {
+  max-width: 48%;
+  flex: 1 0 15em;
   padding: 10px;
 }
-.forecast table th {
-  font-size: 22px;
-  border: 2px solid #edbc5a;
-  justify-content: center;
-  background-color: #28ba35;
-  width: 15em;
-  height: 2em;
-}
-.forecast table td {
-  font-size: 22px;
-  border: 2px solid #edbc5a;
-  height: 2em;
-  font-weight: bold;
-  background-color: #f8eac4;
-}
+.list3 {
+  list-style-type: none;
+  padding:10px;
+  font-family: 'Amarante', Monaco, monospace;
+  font-size: 24px;
+  line-height: 1em;
+  }
+  .sec3 li {
+  padding:10px;
+  font-family: 'Kalam', Monaco, monospace;
+  font-size: 1em;
+  line-height: .5em;
+  text-align: left;
+  }
+  .indent {
+  text-indent: 30px;
+  }
 
 
 
 
-/*Gallary Page*/
-.container { 
-  margin-left: -70px;
-  display:grid; 
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-left: -32px;
-}
-.shadow:hover {
-  box-shadow: 0 0 50px #333;
-}
-
-
-
-/*Home Page*/
-.towninfo {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 0 2rem;
-  margin-left:-1px;
-}
-.img1 {
-  margin-right: 35px;
-}
-#img2{
-  margin-right: 55px;
-  margin-left: 35px;
-}
 
 
 

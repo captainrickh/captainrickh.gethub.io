@@ -28,36 +28,59 @@
         
         <header>
             <img src="images/innlogoM.jpg" alt="logo">
-            <div class="ccb">
-                <h3 class="cb"></h3>
-            </div>
             <section class="title">
-                <br>
-                <h1>Southeastern Idaho Weather</h1>
-                <div class="motto">"We're here for you weather or not."</div>
+                <h1>Temple Inn & Suites</h1>
             </section>
         </header>
 
-
-        
-
-
         <main>
+            
             <div>
+                <p class="motto">We specialize in hotel accommodations near temples of The Church of Jesus Christ of Latter-day Saints around the world.</p>
             </div>
+
+            <div class="herodiv">
+                    <picture>
+                            <source media="(max-width: 350px)" srcset="images/slc_ldstemple.jpg">
+                            <source media="(min-width: 351px)" srcset="images/slc_ldstemple.jpg">
+                            <img class="heroimg" src="images/slc_ldstemple.jpg" alt="hero image">
+                    </picture>
+                    
+                    <section class="planner">
+                            <h3><u>Trip Planner</u></h3>
+			            <ul class="plannerdata">
+                            
+                            <li>
+                                <label>Temple Name:</label>
+                                <input type="text" name="templename" required minlength="5" pattern="[A-Z][A-Za-z' -]+">
+                            </li>
+                            <li>
+                                <label>Check-in:</label>
+                                <input type="date" name="checkin">
+                            </li>
+                            <li>
+                                <label>Check-out:</label>
+                                <input type="date" name="checkout">
+                            </li>
+                            <li>
+                                <input type="submit" value="Submit" formaction="3.0reservation.html"></button>
+                            </li>
+                        </ul>
+		            </section>
+	            </div>
             
             <article class="sec1">
                 <div>
-                    <h2>Temple Of The Week</h2>
-                    <h5> Memphis Tennesse</h5>
-                        <img class="img1" id="img2" src="images/homestory2.jpg" alt="Walden Lovin">
-                            <p><b>Idaho gets 16 inches of rain, on average, per year.</b><br>The US average is 39 inches of rain per year.</p>
-                            <p><b>Idaho averages 29 inches of snow per year.</b><br>The US average is 26 inches of snow per year.</p>
-                            <p><b>On average, there are 206 sunny days per year in Idaho.</b><br>The US average is 205 sunny days.</p>
-                            <p><b>Summer High:</b> the July high is around 90 degrees</p>
-                            <p><b>Winter Low:</b> the January low is 24</p>
-                            <p><b>Sperling's Comfort Index for Idaho is a 72 out of 100</b></p>
-                            <p><b>YOU SHOULD KNOW</b>Boise gets some kind of precipitation, on average, 88 days per year. Precipitation is rain, snow, sleet, or hail that falls to the ground. In order for precipitation to be counted you have to get at least .01 inches on the ground to measure.</p>
+                    <h2>Temple Of The Month</h2>
+                    <h5>"Memphis Tennesse"</h5>
+                        <img class="img1" id="img2" src="images/memphis-temple-02.jpg" alt="Memphis Tennesse Temple">
+                            <p>The renovated Memphis Tennessee Temple of The Church of Jesus Christ of Latter-day Saints will be rededicated on Sunday, May 5, 2019. <br>
+                                <br>
+                                Elder Jeffrey R. Holland of the Quorum of the Twelve Apostles will preside over the single 10:00 a.m. rededication session. Attendance to the session will be by invitation. The temple rededication session will not be broadcast to local meetinghouses, so the two-hour block of Sunday meetings will be held as planned.<br>
+                                <br>
+                                Plans to construct the temple, located at 4199 Kirby-Whitten Parkway in Bartlett, Tennessee, were announced September 17, 1998, and Church leaders broke ground January 16, 1999. The temple was dedicated April 23, 2000, by President James E. Faust, then Second Counselor in the First Presidency of the Church. Latter-day Saints in Memphis; Little Rock, Arkansas; and Tupelo, Mississippi, are served by the temple.<br>
+                                <br>
+                                The temple will be open for ordinances on Tuesday, May 14.</p>
                 </div>
             </article>
         
@@ -67,11 +90,11 @@
         <footer>
             <ul>
                 <li>Contact us:</li>
-                <li>Phone: 555-682-7139</li>
-                <li>Email: support@seidweather.com</li>
-                <li>Mailing Address: 65 Main St, Preston, ID 83263</li>
+                <li>Phone: 1-800-555-7139</li>
+                <li>Email: support@templeinn.com</li>
+                <li>Mailing Address: 4800 Montgomery Ln #300,  Bethesda, MD 20814</li>
             </ul>
-            <img id="map" src="images/area-map.jpg" alt="Area Map">
+
             <p>&copy; 2019 | Rick Holmstead | <a href="#">Terms of Use</a> | <span id="currentdate"></span></p>
         </footer>
 
