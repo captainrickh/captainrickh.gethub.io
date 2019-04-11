@@ -37,12 +37,12 @@ var allData = jsonObj["towns"];
 var mytown = document.getElementById("town").innerHTML;
 var param = "";
     if (mytown === "Fish Haven"){
-        param = "id=5585010";
+        param = "id=5391832";
     }
     else if (mytown === "Soda Springs"){
         param = "id=5607916";
     }
-    else if (mytown === "Preston"){
+    else if (mytown === "Preston"){ 
         param = "id=5604473";
     }
 

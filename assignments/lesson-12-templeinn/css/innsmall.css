@@ -142,7 +142,6 @@ article p {
   font-size: 18px;
 }
 .imgTA {
-  
   width: 300px;
   height: auto;
   box-shadow: 2px 2px 2px black;
@@ -198,6 +197,14 @@ footer ul {
   height:auto;
   margin: 0px;
   padding: 10px;
+}
+.templeinfo img{
+  max-width: 380px;
+}
+.list4 li{
+  list-style-type: none;
+  text-align: left;
+  margin-left: 45px;
 }
 
 
@@ -338,12 +345,4 @@ textarea, select {
  }
 .reservation input[type=send]:hover, .reservation input[type=button]:hover{
   background: rgb(72, 182, 209);
-
-
-
-
-
-
-
-
-
+}
