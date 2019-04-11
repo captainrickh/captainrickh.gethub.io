@@ -12,7 +12,13 @@ main {
   max-width: 58rem; 
   margin:0 auto;
 }
-
+body {
+  background: rgb(245, 245, 229); 
+}
+.motto {
+  font-family: 'Kalam'; font-size:24px;
+  margin-top: -50px;
+}
 
 
 /*Menu Bar*/
@@ -50,34 +56,17 @@ nav {
 
 
 /*Header*/
-header {
-  max-width: 58rem;
-	margin: 25px auto;
-	background-color: #0E62A3;
-	height: auto;
-  min-height: 100px;
-}
-header h1 {
-  font-size: 4rem;
-  color: #FFD700;
-  font-family: 'Kaushan Script', cursive;
-}
-header section div {
-    font-size: 1.3rem;
-    font-style: italic;
-}
 header img {
-    width: 200px;
-    height: auto;
-    float: left;
-    margin: -20px 10px;
-    border: 1px solid #2A1200;
+    width: 400;
+    height: auto; 
+    border: 5px solid #0E62A3;
 }
-.current-conditions, .ccb {
-  display: none;
+.name {
+  color:#F5F5DC;
 }
-body {background: #F5F5DC; }
-.motto {font-family: 'Kalam'; font-size:24px;}
+
+
+
 
 
 
@@ -152,9 +141,9 @@ article p {
 .sec1 h5 { margin-top: -20px; 
   font-size: 18px;
 }
-.img1 {
-  float: right;
-  width: 200px;
+.imgTA {
+  
+  width: 300px;
   height: auto;
   box-shadow: 2px 2px 2px black;
   margin-right: 15px;
@@ -168,11 +157,6 @@ article p {
 
 /*Footer*/
 footer {
-  /*display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  padding: 10px;*/ 
-
   max-width: 58rem; 
   margin: 23px auto;
   padding-bottom: 10px;
@@ -205,7 +189,7 @@ footer ul {
 .templeinfo div {
   display: block;
   border: 3px solid #2A1200;
-  box-shadow: 0px 0px 30px 7px #FFD700;
+  box-shadow: 0px 0px 30px #FFD700;
   font-family: 'Kalam';
   background-color: white;
 }
@@ -222,10 +206,10 @@ footer ul {
 .reservationtitle{font-size: 36px;}
 .reservation {
  margin:10px auto;
- max-width: 300px;
+ max-width: 400px;
  padding: 20px 12px 10px 0px;
  font: 18px 'Spectral SC', Gadget, sans-serif;
- box-shadow: 0px 0px 30px 10px #769E7B;
+ box-shadow: 0px 0px 10px 10px #769E7B;
 }
 .reservation li {
  text-align: left;
@@ -289,7 +273,7 @@ textarea, select {
   line-height: 1.2em;
   text-align: left;
 } 
-.sec1, .sec2, .sec3 {
+.sec1, .sec2 {
   border: 3px solid #2A1200;
   display: flex;
   flex-flow: row wrap;
@@ -306,8 +290,8 @@ textarea, select {
 .services, .amenities {
   color: #2A1200 ;
 }
-.img1, .img2, .img3 {
-  width: 450px;
+.img1, .img2 {
+  width: 375px;
   height: 300px;
   box-shadow: 2px 2px 2px black;
 }
@@ -316,21 +300,32 @@ textarea, select {
 
 
 /*Contact Us*/
+.sec3 { 
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  
+  padding: 10px;  
+}
+.sec3 .leftcol {
+  box-shadow: 0px 0px 15px black;
+}
 .list3 {
-list-style-type: none;
-padding:10px;
-font-family: 'Amarante', Monaco, monospace;
-font-size: 18px;
-line-height: 1.1em;
+  list-style-type: none;
 }
 .sec3 li {
-  padding:10px;
+  padding:0px;
   font-family: 'Kalam', Monaco, monospace;
   font-size: 1em;
-  line-height: .5em;
+  line-height: 1em;
   text-align: left;
 }
-
+.img3{
+  box-shadow: 0px 0px 15px black;
+  margin-left: -10px;
+  width: 412px;
+  height: 350px;
+}
 
 .reservation input[type=send], .reservation input[type=button]{
   text-align: center;

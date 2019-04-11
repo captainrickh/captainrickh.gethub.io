@@ -1,10 +1,13 @@
 /* CIT 230 - Prestion Home page large*/
-@import url('https://fonts.googleapis.com/css?family=Amarante|Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Courgette|Kalam|Kaushan+Script|Marck+Script');
 
 
-@media screen and (min-width:801px) {
+@media screen and (min-width:755px) {
 
  
+
+
+
 /*Menu Bar Full*/  
 nav ul {
   list-style-type: none;
@@ -18,6 +21,11 @@ nav li a {
   color: white;
   padding: 7px 10px;
   text-decoration: none;
+}
+
+
+.name {
+  font-size: 4rem;
 }
 
 
@@ -47,17 +55,41 @@ nav li a {
 .planner li { display: none;
   display: flex;
 }
+
+/*Temple Article*/
+.imgTA {
+  float: right;
+  width: 400px;
+  height: auto;
+}
+#img2{
+  margin-left: 10px;
+}
   
 
 
 /*Temple Page*/
-.templeinfo {
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 3rem 4rem;
-  margin-left: 145px;
-  max-width: 560px;
-}
 
+.templeinfo {
+  
+
+  max-width: 950px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+}
+.templeinfo div {
+  display: block;
+  border: 3px solid #2A1200;
+  box-shadow: 0px 0px 35px #FFD700;
+  font-family: 'Kalam';
+  background-color: white;
+}
+.templeinfo figure {
+  width:auto;
+  height:auto;
+  margin: 0px;
+  padding: 10px;
+}
 
 
 
@@ -108,32 +140,49 @@ nav li a {
 
 
 
+/*Services*/
+.img1, .img2 {
+  width: 450px;
+  height: 350px;
+  box-shadow: 2px 2px 2px black;
+}
+
+
+
 /*Contact Us*/
 .leftcol, .rightcol {
   max-width: 48%;
   flex: 1 0 15em;
   padding: 10px;
 }
+.sec3 { 
+ margin-right: 35px;  
+}
+.sec3 .leftcol {
+  box-shadow: 0px 0px 15px black;
+}
 .list3 {
   list-style-type: none;
   padding:10px;
-  font-family: 'Amarante', Monaco, monospace;
   font-size: 24px;
-  line-height: 1em;
-  }
-  .sec3 li {
-  padding:10px;
+  line-height: 1.5em;
+}
+.sec3 li {
+  padding:0px;
   font-family: 'Kalam', Monaco, monospace;
   font-size: 1em;
-  line-height: .5em;
+  line-height: 1em;
   text-align: left;
-  }
-  .indent {
+}
+.img3{
+  box-shadow: 0px 0px 15px black;
+  margin-left: 25px;
+  width: 450px;
+  height: 368px;
+}
+.indent {
   text-indent: 30px;
-  }
-
-
-
+}
 
 
 

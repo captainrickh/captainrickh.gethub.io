@@ -17,6 +17,35 @@ padding: 20px 25px 10px 13px;
 }
 
 
+.motto {
+font-family: 'Kalam'; font-size:24px;
+margin-top: 0px;
+}
+
+/*Header*/
+header {
+max-width: 58rem;
+margin: 25px auto;
+background-color: #0E62A3;
+height: auto;
+min-height: 100px;
+}
+.name {
+font-size: 3rem;
+color: #FFD700;
+font-family: 'Kaushan Script', cursive;
+}
+header section div {
+    font-size: 1.3rem;
+    font-style: italic;
+}
+header img {
+    width: 200px;
+    height: auto;
+    float: left;
+    margin: -20px 10px;
+    border: 1px solid #2A1200;
+}
 
 
 
