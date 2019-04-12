@@ -2,10 +2,10 @@
 <html lang="en-us">
 
     <head>
-        <title>Temple Inn & Suites Home</title>
+        <title>Temple Inn & Suites Temple</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="description" content="Temple Inn & Suites home page. General info and services.">
+        <meta name="description" content="Temple Inn & Suites Popular Temples page. General info about four of our most populate destinations.">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         <link rel="stylesheet" href="css/innsmall.css">
         <link rel="stylesheet" href="css/innmedium.css">
@@ -17,11 +17,11 @@
         <nav>            
             <ul class="navigation">
                 <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;</a></li>
-                <li><a href="1home.html">Home</a></li>
-                <li><a href="2temple.html"class="active">Temples</a></li>
-                <li><a href="3.0reservation.html">Reservations</a></li>
-                <li><a href="4.0services.html">Services</a></li>
-                <li><a href="5contact.html">Contact Us</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="temple.html"class="active">Temples</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
         
@@ -44,8 +44,8 @@
                         </figure>
                     </section>
                     <section class="list4">
-                        <h1 class="town">San Diego Temple</h1>
-                            <ul >
+                        <h1>San Diego Temple</h1>
+                            <ul>
                                 <li><b>Address:</b></li>
                                     <ul>
                                         <li>7474 Charmant Dr</li>
@@ -72,11 +72,11 @@
                                 <br>
                                 <li><b>Current Weather:</b></li>
                                     <ul>
-                                        <li>Currently: <span id="cw"></span></li>
-                                        <li>High: <span id="temp"></span></li>
-                                        <li>Wind Chill: <span id="wc"></span></li>
-                                        <li>Humidity: <span id="hum"></span></li>
-                                        <li>Wind Speed: <span id="speed"></span></li>
+                                        <li>Currently: <span class="value" id="cw"></span></li>
+                                        <li>Temperature: <span class="value" id="temp"></span></li>
+                                        <li>Wind Chill: <span class="value" id="wc"></span></li>
+                                        <li>Humidity: <span class="value" id="hum"></span></li>
+                                        <li>Wind Speed: <span class="value" id="speed"></span></li>
                                     </ul>
                                 <br>
                                 <li><b>Ordinance, Sessions, Closures</b></li>
@@ -93,8 +93,8 @@
                         </figure>
                     </section>
                     <section class="list4">
-                        <h1 class="town">Laie Hawaii Temple</h1>
-                        <ul >
+                        <h1>Laie Hawaii Temple</h1>
+                        <ul>
                             <li><b>Address:</b></li>
                                 <ul>
                                     <li>55-600 Naniloa Loop</li>
@@ -123,11 +123,11 @@
                             <br>
                             <li><b>Current Weather:</b></li>
                                 <ul>
-                                    <li>Currently: <span id="cw"></span></li>
-                                    <li>High: <span id="temp"></span></li>
-                                    <li>Wind Chill: <span id="wc"></span></li>
-                                    <li>Humidity: <span id="hum"></span></li>
-                                    <li>Wind Speed: <span id="speed"></span></li>
+                                    <li>Currently: <span class="value" id="cw1"></span></li>
+                                    <li>Temperature: <span class="value" id="temp1"></span></li>
+                                    <li>Wind Chill: <span class="value" id="wc1"></span></li>
+                                    <li>Humidity: <span class="value" id="hum1"></span></li>
+                                    <li>Wind Speed: <span class="value" id="speed1"></span></li>
                                 </ul>
                             <br>
                             <li><b>Ordinance, Sessions, Closures</b></li>
@@ -145,7 +145,7 @@
                     </section>
                     <section class="list4">
                         <h1>Nauvoo Illinois Temple</span></h1>
-                        <ul >
+                        <ul>
                                 <li><b>Address:</b></li>
                                     <ul>
                                         <li>50 N Wells St</li>
@@ -172,11 +172,11 @@
                                 <br>
                                 <li><b>Current Weather:</b></li>
                                     <ul>
-                                        <li>Currently: <span id="cw"></span></li>
-                                        <li>High: <span id="temp"></span></li>
-                                        <li>Wind Chill: <span id="wc"></span></li>
-                                        <li>Humidity: <span id="hum"></span></li>
-                                        <li>Wind Speed: <span id="speed"></span></li>
+                                        <li>Currently: <span class="value" id="cw2"></span></li>
+                                        <li>Temperature: <span class="value" id="temp2"></span></li>
+                                        <li>Wind Chill: <span class="value" id="wc2"></span></li>
+                                        <li>Humidity: <span class="value" id="hum2"></span></li>
+                                        <li>Wind Speed: <span class="value" id="speed2"></span></li>
                                     </ul>
                                 <br>
                                 <li><b>Ordinance, Sessions, Closures</b></li>
@@ -194,7 +194,7 @@
                     </section>
                     <section class="list4">
                         <h1>Stockholm Sweden Temple</span></h1>
-                        <ul >
+                        <ul>
                             <li><b>Address:</b></li>
                                 <ul>
                                     <li>Tempelvägen 5</li>
@@ -221,11 +221,11 @@
                             <br>
                             <li><b>Current Weather:</b></li>
                                 <ul>
-                                    <li>Currently: <span id="cw"></span></li>
-                                    <li>High: <span id="temp"></span></li>
-                                    <li>Wind Chill: <span id="wc"></span></li>
-                                    <li>Humidity: <span id="hum"></span></li>
-                                    <li>Wind Speed: <span id="speed"></span></li>
+                                    <li>Currently: <span class="value" id="cw3"></span></li>
+                                    <li>Temperature: <span class="value" id="temp3"></span></li>
+                                    <li>Wind Chill: <span class="value" id="wc3"></span></li>
+                                    <li>Humidity: <span class="value" id="hum3"></span></li>
+                                    <li>Wind Speed: <span class="value" id="speed3"></span></li>
                                 </ul>
                             <br>
                             <li><b>Ordinance, Sessions, Closures</b></li>
